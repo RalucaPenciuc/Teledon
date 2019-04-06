@@ -1,0 +1,214 @@
+¨2019-03-16 11:45:14,447 Test worker DEBUG Initializing configuration XmlConfiguration[location=D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml]
+E2019-03-16 11:45:14,462 Test worker DEBUG Installed 1 script engine
+£2019-03-16 11:45:15,023 Test worker DEBUG Oracle Nashorn version: 10.0.2, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+R2019-03-16 11:45:15,023 Test worker DEBUG PluginManager 'Core' found 116 plugins
+Q2019-03-16 11:45:15,023 Test worker DEBUG PluginManager 'Level' found 0 plugins
+S2019-03-16 11:45:15,038 Test worker DEBUG PluginManager 'Lookup' found 13 plugins
+É2019-03-16 11:45:15,054 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+O2019-03-16 11:45:15,069 Test worker TRACE TypeConverterRegistry initializing.
+Z2019-03-16 11:45:15,069 Test worker DEBUG PluginManager 'TypeConverter' found 26 plugins
+Ô2019-03-16 11:45:15,101 Test worker DEBUG PatternLayout$Builder(pattern="%d{DATE} %-5level %class{36} %L %M - %msg%n", PatternSelector=null, Configuration(D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+V2019-03-16 11:45:15,101 Test worker DEBUG PluginManager 'Converter' found 42 plugins
+â2019-03-16 11:45:15,132 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+Ä2019-03-16 11:45:15,148 Test worker DEBUG ConsoleAppender$Builder(target="SYSTEM_OUT", follow="null", direct="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%d{DATE} %-5level %class{36} %L %M - %msg%n), name="Console", Configuration(D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml), Filter=null)
+_2019-03-16 11:45:15,148 Test worker DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false
+É2019-03-16 11:45:15,148 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+Ô2019-03-16 11:45:15,148 Test worker DEBUG PatternLayout$Builder(pattern="%d{DATE} %-5level %class{36} %L %M - %msg%n", PatternSelector=null, Configuration(D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+Ü2019-03-16 11:45:15,148 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.FileAppender].
+˚2019-03-16 11:45:15,163 Test worker DEBUG FileAppender$Builder(fileName="target/test.log", append="true", locking="null", advertise="null", advertiseUri="null", createOnDemand="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%d{DATE} %-5level %class{36} %L %M - %msg%n), name="log", Configuration(D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml), Filter=null)
+P2019-03-16 11:45:15,163 Test worker DEBUG Starting FileManager target/test.log
+à2019-03-16 11:45:15,163 Test worker DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+L2019-03-16 11:45:15,163 Test worker DEBUG createAppenders(={Console, log})
+Ü2019-03-16 11:45:15,163 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+c2019-03-16 11:45:15,179 Test worker DEBUG createAppenderRef(ref="log", level="null", Filter=null)
+Ü2019-03-16 11:45:15,179 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+g2019-03-16 11:45:15,179 Test worker DEBUG createAppenderRef(ref="Console", level="null", Filter=null)
+ã2019-03-16 11:45:15,179 Test worker DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2019-03-16 11:45:15,179 Test worker DEBUG createLogger(additivity="null", level="TRACE", includeLocation="null", ={log, Console}, ={}, Configuration(D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml), Filter=null)
+Ñ2019-03-16 11:45:15,194 Test worker DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+B2019-03-16 11:45:15,194 Test worker DEBUG createLoggers(={root})
+´2019-03-16 11:45:15,194 Test worker DEBUG Configuration XmlConfiguration[location=D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml] initialized
+®2019-03-16 11:45:15,194 Test worker DEBUG Starting configuration XmlConfiguration[location=D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml]
+´2019-03-16 11:45:15,194 Test worker DEBUG Started configuration XmlConfiguration[location=D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml] OK.
+z2019-03-16 11:45:15,194 Test worker TRACE Stopping org.apache.logging.log4j.core.config.DefaultConfiguration@7fa5fb77...
+~2019-03-16 11:45:15,194 Test worker TRACE DefaultConfiguration notified 1 ReliabilityStrategies that config will be stopped.
+\2019-03-16 11:45:15,194 Test worker TRACE DefaultConfiguration stopping root LoggerConfig.
+Ä2019-03-16 11:45:15,194 Test worker TRACE DefaultConfiguration notifying ReliabilityStrategies that appenders will be stopped.
+^2019-03-16 11:45:15,194 Test worker TRACE DefaultConfiguration stopping remaining Appenders.
+f2019-03-16 11:45:15,194 Test worker DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+Ä2019-03-16 11:45:15,210 Test worker DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-1, all resources released: true
+^2019-03-16 11:45:15,210 Test worker DEBUG Appender DefaultConsole-1 stopped with status true
+_2019-03-16 11:45:15,210 Test worker TRACE DefaultConfiguration stopped 1 remaining Appenders.
+i2019-03-16 11:45:15,210 Test worker TRACE DefaultConfiguration cleaning Appenders from 1 LoggerConfigs.
+y2019-03-16 11:45:15,226 Test worker DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@7fa5fb77 OK
+ß2019-03-16 11:45:15,319 Test worker TRACE Reregistering MBeans after reconfigure. Selector=org.apache.logging.log4j.core.selector.ClassLoaderContextSelector@2dc6672a
+á2019-03-16 11:45:15,319 Test worker TRACE Reregistering context (1/1): '5ef04b5' org.apache.logging.log4j.core.LoggerContext@50e0ba13
+2019-03-16 11:45:15,335 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5'
+ñ2019-03-16 11:45:15,335 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5,component=StatusLogger'
+ô2019-03-16 11:45:15,335 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5,component=ContextSelector'
+ò2019-03-16 11:45:15,335 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5,component=Loggers,name=*'
+ö2019-03-16 11:45:15,351 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5,component=Appenders,name=*'
+ü2019-03-16 11:45:15,351 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5,component=AsyncAppenders,name=*'
+ü2019-03-16 11:45:15,351 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5,component=AsyncLoggerRingBuffer'
+´2019-03-16 11:45:15,351 Test worker TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=5ef04b5,component=Loggers,name=*,subtype=RingBuffer'
+d2019-03-16 11:45:15,366 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=5ef04b5
+{2019-03-16 11:45:15,382 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=5ef04b5,component=StatusLogger
+~2019-03-16 11:45:15,382 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=5ef04b5,component=ContextSelector
+|2019-03-16 11:45:15,382 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=5ef04b5,component=Loggers,name=
+Ö2019-03-16 11:45:15,382 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=5ef04b5,component=Appenders,name=Console
+Å2019-03-16 11:45:15,398 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=5ef04b5,component=Appenders,name=log
+U2019-03-16 11:45:15,398 Test worker TRACE Using default SystemClock for timestamps.
+[2019-03-16 11:45:15,398 Test worker TRACE Using DummyNanoClock for nanosecond timestamps.
+á2019-03-16 11:45:15,398 Test worker DEBUG Reconfiguration complete for context[name=5ef04b5] at URI D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\build\resources\main\log4j2.xml (org.apache.logging.log4j.core.LoggerContext@50e0ba13) with optional ClassLoader: null
+Y2019-03-16 11:45:15,398 Test worker DEBUG Shutdown hook enabled. Registering a new one.
+â2019-03-16 11:45:15,429 Test worker DEBUG LoggerContext[name=5ef04b5, org.apache.logging.log4j.core.LoggerContext@50e0ba13] started OK.
+Ï16 mar. 2019 11:45:15,444 INFO  repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+˚16 mar. 2019 11:45:15,507 TRACE repository.DonatieRepository 27 save - Enter Saving entity Donatie{IDCazCaritabil=CazCaritabil{ID='5', totalSum=200.5}, Donator=Donator{ID='4', name='vasile', address='bistrita', phone='0987654321'}, sumaDonata=20.0} 
+O16 mar. 2019 11:45:15,522 TRACE repository.JdbcUtils 56 getConnection - Enter
+R16 mar. 2019 11:45:15,522 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+´16 mar. 2019 11:45:15,522 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+W16 mar. 2019 11:45:15,522 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+W16 mar. 2019 11:45:15,522 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+m16 mar. 2019 11:45:15,569 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+&org.sqlite.SQLiteConnection@3d7beb3e
+y16 mar. 2019 11:45:16,066 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@3d7beb3e)
+M16 mar. 2019 11:45:17,616 TRACE repository.DonatieRepository 41 save - Exit
+O16 mar. 2019 11:45:17,616 TRACE repository.JdbcUtils 56 getConnection - Enter
+R16 mar. 2019 11:45:17,617 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+´16 mar. 2019 11:45:17,618 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+W16 mar. 2019 11:45:17,619 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+W16 mar. 2019 11:45:17,619 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+m16 mar. 2019 11:45:17,620 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+%org.sqlite.SQLiteConnection@843b0a9
+x16 mar. 2019 11:45:17,627 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@843b0a9)
+ˆ16 mar. 2019 11:45:17,661 INFO  repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+V16 mar. 2019 11:45:17,677 TRACE repository.CazCaritabilRepository 24 findAll - Enter
+O16 mar. 2019 11:45:17,677 TRACE repository.JdbcUtils 56 getConnection - Enter
+R16 mar. 2019 11:45:17,677 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+´16 mar. 2019 11:45:17,677 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+W16 mar. 2019 11:45:17,677 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+W16 mar. 2019 11:45:17,677 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+m16 mar. 2019 11:45:17,677 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+&org.sqlite.SQLiteConnection@38a1b2ed
+y16 mar. 2019 11:45:17,677 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@38a1b2ed)
+–16 mar. 2019 11:45:17,677 TRACE repository.CazCaritabilRepository 42 findAll - Exit with([CazCaritabil{ID='1', totalSum=1000.0}, CazCaritabil{ID='2', totalSum=94.0}, CazCaritabil{ID='3', totalSum=29993.0}])
+O16 mar. 2019 11:45:17,677 TRACE repository.JdbcUtils 56 getConnection - Enter
+R16 mar. 2019 11:45:17,693 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+´16 mar. 2019 11:45:17,693 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+W16 mar. 2019 11:45:17,693 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+W16 mar. 2019 11:45:17,693 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+m16 mar. 2019 11:45:17,693 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+&org.sqlite.SQLiteConnection@6f732272
+y16 mar. 2019 11:45:17,693 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6f732272)
+ˆ16 mar. 2019 11:45:17,724 INFO  repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+à16 mar. 2019 11:45:17,724 TRACE repository.CazCaritabilRepository 48 save - Enter Saving entity CazCaritabil{ID='4', totalSum=665.55} 
+O16 mar. 2019 11:45:17,724 TRACE repository.JdbcUtils 56 getConnection - Enter
+R16 mar. 2019 11:45:17,724 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+´16 mar. 2019 11:45:17,724 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+W16 mar. 2019 11:45:17,739 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+W16 mar. 2019 11:45:17,755 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+m16 mar. 2019 11:45:17,755 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+&org.sqlite.SQLiteConnection@13daeaf0
+y16 mar. 2019 11:45:17,755 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@13daeaf0)
+R16 mar. 2019 11:45:18,740 TRACE repository.CazCaritabilRepository 61 save - Exit
+O16 mar. 2019 11:45:18,740 TRACE repository.JdbcUtils 56 getConnection - Enter
+R16 mar. 2019 11:45:18,740 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+´16 mar. 2019 11:45:18,740 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+W16 mar. 2019 11:45:18,740 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+W16 mar. 2019 11:45:18,740 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+m16 mar. 2019 11:45:18,740 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+&org.sqlite.SQLiteConnection@265914bc
+y16 mar. 2019 11:45:18,740 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@265914bc)
+! Ï16 mar. 2019 11:45:19,602 INFO  repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+! Q16 mar. 2019 11:45:19,602 TRACE repository.DonatorRepository 55 findAll - Enter
+! O16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 56 getConnection - Enter
+! R16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+! ´16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+! W16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+! W16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+! m16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+! &org.sqlite.SQLiteConnection@6029ba64
+! y16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6029ba64)
+! ›16 mar. 2019 11:45:19,602 TRACE repository.DonatorRepository 75 findAll - Exit with([Donator{ID='1', name='maria', address='cluj', phone='123456789'}, Donator{ID='2', name='george', address='turda', phone='291847563'}])
+! O16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 56 getConnection - Enter
+! R16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+! ´16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+! W16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+! W16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+! m16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+! &org.sqlite.SQLiteConnection@37d9ad74
+! y16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@37d9ad74)
+!"Ï16 mar. 2019 11:45:19,617 INFO  repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+!"l16 mar. 2019 11:45:19,617 TRACE repository.DonatorRepository 27 findOne - Enter Finding enitity with id 1 
+!"O16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 56 getConnection - Enter
+!"R16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+!"´16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+!"W16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+!"W16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+!"m16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+!"&org.sqlite.SQLiteConnection@495752bc
+!"y16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@495752bc)
+!"ó16 mar. 2019 11:45:19,633 TRACE repository.DonatorRepository 41 findOne - Exit with(Donator{ID='1', name='maria', address='cluj', phone='123456789'})
+!#Ï16 mar. 2019 11:45:19,633 INFO  repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+!#ü16 mar. 2019 11:45:19,633 TRACE repository.DonatorRepository 81 save - Enter Saving entity Donator{ID='3', name='ana', address='oradea', phone='0712345678'} 
+!#O16 mar. 2019 11:45:19,633 TRACE repository.JdbcUtils 56 getConnection - Enter
+!#R16 mar. 2019 11:45:19,633 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+!#´16 mar. 2019 11:45:19,633 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+!#W16 mar. 2019 11:45:19,633 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+!#W16 mar. 2019 11:45:19,649 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+!#m16 mar. 2019 11:45:19,649 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+!#&org.sqlite.SQLiteConnection@1e488881
+!#y16 mar. 2019 11:45:19,649 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@1e488881)
+!#M16 mar. 2019 11:45:20,594 TRACE repository.DonatorRepository 96 save - Exit
+!#l16 mar. 2019 11:45:20,594 TRACE repository.DonatorRepository 27 findOne - Enter Finding enitity with id 3 
+!#O16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 56 getConnection - Enter
+!#y16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@1e488881)
+!#ó16 mar. 2019 11:45:20,594 TRACE repository.DonatorRepository 41 findOne - Exit with(Donator{ID='3', name='ana', address='oradea', phone='712345678'})
+!#O16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 56 getConnection - Enter
+!#R16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+!#´16 mar. 2019 11:45:20,594 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+!#W16 mar. 2019 11:45:20,594 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+!#W16 mar. 2019 11:45:20,594 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+!#m16 mar. 2019 11:45:20,610 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+!#&org.sqlite.SQLiteConnection@6d59bbb1
+!#y16 mar. 2019 11:45:20,625 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6d59bbb1)
+%$Ó16 mar. 2019 11:45:21,989 INFO  repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+%$m16 mar. 2019 11:45:21,989 TRACE repository.VoluntarRepository 22 findOne - Enter Finding enitity with id 1 
+%$O16 mar. 2019 11:45:21,989 TRACE repository.JdbcUtils 56 getConnection - Enter
+%$R16 mar. 2019 11:45:21,989 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+%$´16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+%$W16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+%$W16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+%$m16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+%$&org.sqlite.SQLiteConnection@59a4fb45
+%$y16 mar. 2019 11:45:21,989 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@59a4fb45)
+%$Ö16 mar. 2019 11:45:21,989 TRACE repository.VoluntarRepository 35 findOne - Exit with(Voluntar{ID='1', name='ion', password='1234'})
+%&Ó16 mar. 2019 11:45:21,989 INFO  repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+%&ç16 mar. 2019 11:45:21,989 TRACE repository.VoluntarRepository 54 save - Enter Saving entity Voluntar{ID='3', name='ana', password='passw'} 
+%&O16 mar. 2019 11:45:21,989 TRACE repository.JdbcUtils 56 getConnection - Enter
+%&R16 mar. 2019 11:45:21,989 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+%&´16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+%&W16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+%&W16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+%&m16 mar. 2019 11:45:21,989 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+%&&org.sqlite.SQLiteConnection@3787f473
+%&y16 mar. 2019 11:45:22,004 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@3787f473)
+%&N16 mar. 2019 11:45:22,942 TRACE repository.VoluntarRepository 68 save - Exit
+%&m16 mar. 2019 11:45:22,942 TRACE repository.VoluntarRepository 22 findOne - Enter Finding enitity with id 3 
+%&O16 mar. 2019 11:45:22,942 TRACE repository.JdbcUtils 56 getConnection - Enter
+%&R16 mar. 2019 11:45:22,942 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+%&´16 mar. 2019 11:45:22,942 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+%&W16 mar. 2019 11:45:22,942 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+%&W16 mar. 2019 11:45:22,942 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+%&m16 mar. 2019 11:45:22,942 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+%&&org.sqlite.SQLiteConnection@14a8a35d
+%&y16 mar. 2019 11:45:22,942 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@14a8a35d)
+%&Ü16 mar. 2019 11:45:22,958 TRACE repository.VoluntarRepository 35 findOne - Exit with(Voluntar{ID='3', name='ana', password='passw'})
+%&O16 mar. 2019 11:45:22,958 TRACE repository.JdbcUtils 56 getConnection - Enter
+%&R16 mar. 2019 11:45:22,958 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+%&´16 mar. 2019 11:45:22,958 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+%&W16 mar. 2019 11:45:22,958 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+%&W16 mar. 2019 11:45:22,958 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+%&m16 mar. 2019 11:45:22,958 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+%&&org.sqlite.SQLiteConnection@6a280c5e
+%&y16 mar. 2019 11:45:22,958 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6a280c5e)

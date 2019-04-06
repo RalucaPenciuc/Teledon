@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repository.DonatorRepositoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-03-16T09:45:19" hostname="Raluca-PC" time="2.367">
+  <properties/>
+  <testcase name="findAll" classname="repository.DonatorRepositoryTest" time="0.017"/>
+  <testcase name="findOne" classname="repository.DonatorRepositoryTest" time="0.012"/>
+  <testcase name="save" classname="repository.DonatorRepositoryTest" time="2.337"/>
+  <system-out><![CDATA[16 mar. 2019 11:45:19,602 INFO  repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+16 mar. 2019 11:45:19,602 TRACE repository.DonatorRepository 55 findAll - Enter
+16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 56 getConnection - Enter
+16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+16 mar. 2019 11:45:19,602 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+org.sqlite.SQLiteConnection@6029ba64
+16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6029ba64)
+16 mar. 2019 11:45:19,602 TRACE repository.DonatorRepository 75 findAll - Exit with([Donator{ID='1', name='maria', address='cluj', phone='123456789'}, Donator{ID='2', name='george', address='turda', phone='291847563'}])
+16 mar. 2019 11:45:19,602 TRACE repository.JdbcUtils 56 getConnection - Enter
+16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+org.sqlite.SQLiteConnection@37d9ad74
+16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@37d9ad74)
+16 mar. 2019 11:45:19,617 INFO  repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+16 mar. 2019 11:45:19,617 TRACE repository.DonatorRepository 27 findOne - Enter Finding enitity with id 1 
+16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 56 getConnection - Enter
+16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+16 mar. 2019 11:45:19,617 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+org.sqlite.SQLiteConnection@495752bc
+16 mar. 2019 11:45:19,617 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@495752bc)
+16 mar. 2019 11:45:19,633 TRACE repository.DonatorRepository 41 findOne - Exit with(Donator{ID='1', name='maria', address='cluj', phone='123456789'})
+16 mar. 2019 11:45:19,633 INFO  repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.driver=org.sqlite.JDBC, tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db} 
+16 mar. 2019 11:45:19,633 TRACE repository.DonatorRepository 81 save - Enter Saving entity Donator{ID='3', name='ana', address='oradea', phone='0712345678'} 
+16 mar. 2019 11:45:19,633 TRACE repository.JdbcUtils 56 getConnection - Enter
+16 mar. 2019 11:45:19,633 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+16 mar. 2019 11:45:19,633 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+16 mar. 2019 11:45:19,633 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+16 mar. 2019 11:45:19,649 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+16 mar. 2019 11:45:19,649 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+org.sqlite.SQLiteConnection@1e488881
+16 mar. 2019 11:45:19,649 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@1e488881)
+16 mar. 2019 11:45:20,594 TRACE repository.DonatorRepository 96 save - Exit
+16 mar. 2019 11:45:20,594 TRACE repository.DonatorRepository 27 findOne - Enter Finding enitity with id 3 
+16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 56 getConnection - Enter
+16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@1e488881)
+16 mar. 2019 11:45:20,594 TRACE repository.DonatorRepository 41 findOne - Exit with(Donator{ID='3', name='ana', address='oradea', phone='712345678'})
+16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 56 getConnection - Enter
+16 mar. 2019 11:45:20,594 TRACE repository.JdbcUtils 23 getNewConnection - Enter
+16 mar. 2019 11:45:20,594 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+16 mar. 2019 11:45:20,594 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+16 mar. 2019 11:45:20,594 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+16 mar. 2019 11:45:20,610 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+org.sqlite.SQLiteConnection@6d59bbb1
+16 mar. 2019 11:45:20,625 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6d59bbb1)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

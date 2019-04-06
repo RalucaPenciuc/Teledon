@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.VoluntarTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-03-16T09:45:17" hostname="Raluca-PC" time="0.008">
+  <properties/>
+  <testcase name="setPassword" classname="model.VoluntarTest" time="0.002"/>
+  <testcase name="getPassword" classname="model.VoluntarTest" time="0.0"/>
+  <testcase name="getName" classname="model.VoluntarTest" time="0.0"/>
+  <testcase name="getID" classname="model.VoluntarTest" time="0.001"/>
+  <testcase name="setID" classname="model.VoluntarTest" time="0.001"/>
+  <testcase name="setName" classname="model.VoluntarTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

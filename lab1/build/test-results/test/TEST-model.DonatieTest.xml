@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.DonatieTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-16T09:45:17" hostname="Raluca-PC" time="0.003">
+  <properties/>
+  <testcase name="getID" classname="model.DonatieTest" time="0.001"/>
+  <testcase name="setID" classname="model.DonatieTest" time="0.0"/>
+  <testcase name="getSumaDonata" classname="model.DonatieTest" time="0.0"/>
+  <testcase name="setSumaDonata" classname="model.DonatieTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
