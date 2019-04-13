@@ -1,7 +1,9 @@
 package service;
-
 import model.*;
-import repository.*;
+import repository.ICazCaritabilRepository;
+import repository.IDonatieRepository;
+import repository.IDonatorRepository;
+import repository.IVoluntarRepository;
 import utils.*;
 
 import java.util.ArrayList;

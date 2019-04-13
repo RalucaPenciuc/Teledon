@@ -1,5 +1,6 @@
 package utils;
 
+
 import model.CazCaritabil;
 
 public class CazCaritabilEvent implements Event{

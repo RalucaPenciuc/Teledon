@@ -1,3 +1,4 @@
+import controller.mainWindowController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,7 +8,6 @@ import model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import repository.*;
-import controller.mainWindowController;
 import service.Service;
 
 import java.io.FileReader;

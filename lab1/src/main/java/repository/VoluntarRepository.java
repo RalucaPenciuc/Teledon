@@ -10,16 +10,16 @@ import java.util.Properties;
 
 public class VoluntarRepository implements IVoluntarRepository<String, Voluntar> {
     private JdbcUtils dbUtils;
-//    private static final Logger logger = LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger();
 
     public VoluntarRepository(Properties properties) {
-//        logger.info("Initializing VoluntarRepository with properties: {} ", properties);
+        logger.info("Initializing VoluntarRepository with properties: {} ", properties);
         dbUtils = new JdbcUtils(properties);
     }
 
     @Override
     public Voluntar findOne(String s) {
-//        logger.traceEntry("Finding enitity with name {} ", s);
+        logger.traceEntry("Finding enitity with name {} ", s);
         Connection con = dbUtils.getConnection();
 
         try (PreparedStatement preStmt = con.prepareStatement("select * from Voluntari where name = ?")) {
@@ -32,15 +32,15 @@ public class VoluntarRepository implements IVoluntarRepository<String, Voluntar>
 
                     Voluntar voluntar = new Voluntar(String.valueOf(id), nume, parola);
 
-//                    logger.traceExit(voluntar);
+                    logger.traceExit(voluntar);
                     return voluntar;
                 }
             }
         } catch (SQLException ex) {
-//            logger.error(ex);
+            logger.error(ex);
             System.out.println("Error DB " + ex);
         }
-//        logger.traceExit("No entity found with name {}", s);
+        logger.traceExit("No entity found with name {}", s);
         try {
             con.close();
         } catch (SQLException e) {

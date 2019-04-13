@@ -14,8 +14,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import static org.junit.Assert.*;
-
 public class DonatieRepositoryTest {
 
     @Test

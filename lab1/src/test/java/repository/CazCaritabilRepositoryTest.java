@@ -12,8 +12,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Properties;
 
-import static org.junit.Assert.*;
-
 public class CazCaritabilRepositoryTest {
 
     @Test

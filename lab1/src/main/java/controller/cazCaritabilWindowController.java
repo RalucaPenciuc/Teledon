@@ -65,7 +65,8 @@ public class cazCaritabilWindowController implements Observer<CazCaritabilEvent>
         if (cazCaritabilEvent.getType() == ChangeEventType.UPDATE) {
             observableList.remove(cazCaritabilEvent.getOldData());
             observableList.add(cazCaritabilEvent.getData());
-            tableViewCaz.refresh();
+            observableList = FXCollections.observableList(StreamSupport.stream(service.findAllCazuriCaritabile().spliterator(), false).collect(Collectors.toList()));
+            tableViewCaz.setItems(observableList);
         }
     }
 
