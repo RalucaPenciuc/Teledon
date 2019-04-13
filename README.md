@@ -11,3 +11,4 @@ Detalii proiect:
 - jurnalizare
 - informatiile pentru conectarea la baza de date se preiau dintr-un fisier de configurare
 - interfata grafica (SceneBuilder)
+- arhitectura aplicatie server-client
