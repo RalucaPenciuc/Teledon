@@ -92,7 +92,12 @@ public class TeledonClientObjectWorker implements Runnable, ITeledonObserver {
         }
         else if (request instanceof GetCazuriRequest) {
             System.out.println("GetCazuriRequest ...");
-            Iterable<CazCaritabilDTO> cazuriDTO = DTOUtils.getDTO(server.findAllCazuriCaritabile());
+            Iterable<CazCaritabilDTO> cazuriDTO = null;
+            try {
+                cazuriDTO = DTOUtils.getDTO(server.findAllCazuriCaritabile());
+            } catch (TeledonException e) {
+                e.printStackTrace();
+            }
             return new GetCazuriResponse(cazuriDTO);
         }
         else if (request instanceof AddRequest) {
@@ -113,7 +118,12 @@ public class TeledonClientObjectWorker implements Runnable, ITeledonObserver {
             System.out.println("SearchRequest ...");
             SearchRequest searchRequest = (SearchRequest) request;
             DonatorDTO donatorDTO = searchRequest.getDonator();
-            Iterable<DonatorDTO> donatoriDTO = DTOUtils.getDTOS(server.cautaDonatori(donatorDTO.getName()));
+            Iterable<DonatorDTO> donatoriDTO = null;
+            try {
+                donatoriDTO = DTOUtils.getDTOS(server.cautaDonatori(donatorDTO.getName()));
+            } catch (TeledonException e) {
+                e.printStackTrace();
+            }
             return new GetDonatoriResponse(donatoriDTO);
         }
         return null;

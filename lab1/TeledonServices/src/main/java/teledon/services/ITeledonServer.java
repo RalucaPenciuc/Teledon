@@ -9,6 +9,6 @@ public interface ITeledonServer {
     void login(Voluntar voluntar, ITeledonObserver client) throws TeledonException;
     void logout(Voluntar voluntar, ITeledonObserver client) throws TeledonException;
     void adaugaDonatie(DTODonatie donatieDTO) throws TeledonException;
-    Iterable<CazCaritabil> findAllCazuriCaritabile();
-    Iterable<Donator> cautaDonatori(String nume);
+    Iterable<CazCaritabil> findAllCazuriCaritabile() throws TeledonException;
+    Iterable<Donator> cautaDonatori(String nume) throws TeledonException;
 }

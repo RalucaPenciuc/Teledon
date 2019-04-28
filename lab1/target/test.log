@@ -8562,3 +8562,202 @@
 13 Apr 2019 18:12:57,005 INFO  repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
 13 Apr 2019 18:12:57,007 TRACE repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@60d8ac38)
 13 Apr 2019 18:12:57,009 TRACE repository.CazCaritabilRepository 74 findAll - Exit with([CazCaritabil{ID='1', totalSum=1666.0}, CazCaritabil{ID='2', totalSum=745.0}, CazCaritabil{ID='3', totalSum=33000.0}])
+28 Apr 2019 15:47:24,714 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 15:47:24,761 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 15:47:24,761 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 15:47:24,761 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 16:57:17,292 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 16:57:17,653 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 16:57:17,653 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 16:57:17,662 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 16:57:53,439 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name ion 
+28 Apr 2019 16:57:53,544 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 16:57:53,544 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 16:57:53,545 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+28 Apr 2019 16:57:53,545 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 16:57:53,546 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 16:57:54,281 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 16:57:54,427 ERROR teledon.persistence.repository.JdbcUtils 48 getNewConnection - java.sql.SQLException: path to 'D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db': 'D:\Documente\AN2' does not exist
+28 Apr 2019 16:57:54,429 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit
+28 Apr 2019 17:00:08,515 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:00:09,451 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:00:09,781 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:00:09,825 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:01:00,689 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name ion 
+28 Apr 2019 17:01:00,691 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 17:01:00,691 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 17:01:00,691 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db
+28 Apr 2019 17:01:00,691 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 17:01:00,691 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 17:01:00,839 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 17:01:01,175 ERROR teledon.persistence.repository.JdbcUtils 48 getNewConnection - java.sql.SQLException: path to 'D:/Documente/AN2/Sem2/MPP/TemeProiect/Teledon.db': 'D:\Documente\AN2' does not exist
+28 Apr 2019 17:01:01,178 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit
+28 Apr 2019 17:04:41,428 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:04:41,528 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:04:41,588 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:04:41,639 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:04:59,077 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name ion 
+28 Apr 2019 17:04:59,078 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 17:04:59,078 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 17:04:59,079 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 17:04:59,079 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 17:04:59,079 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 17:04:59,105 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 17:05:00,252 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@3c059a25)
+28 Apr 2019 17:05:00,259 TRACE teledon.persistence.repository.VoluntarRepository 35 findOne - Exit with(teledon.model.Voluntar{ID='1', name='ion', password='user'})
+28 Apr 2019 17:06:38,412 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:06:38,427 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:06:38,429 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:06:38,452 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:06:57,167 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name ion 
+28 Apr 2019 17:06:57,168 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 17:06:57,168 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 17:06:57,168 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 17:06:57,168 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 17:06:57,169 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 17:06:57,173 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 17:06:57,567 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@472b7fd9)
+28 Apr 2019 17:06:57,573 TRACE teledon.persistence.repository.VoluntarRepository 35 findOne - Exit with(teledon.model.Voluntar{ID='1', name='ion', password='user'})
+28 Apr 2019 17:26:59,893 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:26:59,963 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:26:59,967 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:26:59,967 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:28:17,210 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:28:17,222 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:28:17,227 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:28:17,232 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 17:28:35,183 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name ion 
+28 Apr 2019 17:28:35,184 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 17:28:35,184 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 17:28:35,185 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 17:28:35,185 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 17:28:35,185 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 17:28:35,246 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 17:28:36,181 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@74eb694b)
+28 Apr 2019 17:28:36,188 TRACE teledon.persistence.repository.VoluntarRepository 35 findOne - Exit with(teledon.model.Voluntar{ID='1', name='ion', password='user'})
+28 Apr 2019 18:40:47,001 INFO  teledon.persistence.repository.VoluntarRepository 16 <init> - Initializing VoluntarRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 18:40:47,066 INFO  teledon.persistence.repository.CazCaritabilRepository 18 <init> - Initializing CazCaritabilRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 18:40:47,066 INFO  teledon.persistence.repository.DonatorRepository 21 <init> - Initializing DonatorRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 18:40:47,074 INFO  teledon.persistence.repository.DonatieRepository 21 <init> - Initializing DonatieRepository with properties: {tasks.jdbc.url=jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db, tasks.jdbc.driver=org.sqlite.JDBC, teledon.server.port=55556} 
+28 Apr 2019 18:41:06,192 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name ion 
+28 Apr 2019 18:41:06,193 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:06,193 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:06,194 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:06,194 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:06,194 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:06,243 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:07,404 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@5b88d1f6)
+28 Apr 2019 18:41:07,426 TRACE teledon.persistence.repository.VoluntarRepository 35 findOne - Exit with(teledon.model.Voluntar{ID='1', name='ion', password='user'})
+28 Apr 2019 18:41:08,476 TRACE teledon.persistence.repository.CazCaritabilRepository 56 findAll - Enter
+28 Apr 2019 18:41:08,476 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:08,476 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:08,477 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:08,477 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:08,477 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:08,477 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:08,479 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6c6b66a7)
+28 Apr 2019 18:41:08,481 TRACE teledon.persistence.repository.CazCaritabilRepository 74 findAll - Exit with([teledon.model.CazCaritabil{ID='1', totalSum=1740.0}, teledon.model.CazCaritabil{ID='2', totalSum=1282.0}, teledon.model.CazCaritabil{ID='3', totalSum=35270.0}])
+28 Apr 2019 18:41:16,502 TRACE teledon.persistence.repository.DonatorRepository 56 findAll - Enter
+28 Apr 2019 18:41:16,502 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:16,502 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:16,502 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:16,503 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:16,503 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:16,503 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:16,504 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@c944e37)
+28 Apr 2019 18:41:16,506 TRACE teledon.persistence.repository.DonatorRepository 76 findAll - Exit with([teledon.model.Donator{ID='1', name='maria', address='cluj', phone='0711111111'}, teledon.model.Donator{ID='2', name='george', address='turda', phone='0722222222'}, teledon.model.Donator{ID='108', name='ioan', address='iasi', phone='0799999999'}, teledon.model.Donator{ID='109', name='blaga', address='cluj', phone='0766666666'}, teledon.model.Donator{ID='110', name='diana', address='cluj', phone='0777777777'}, teledon.model.Donator{ID='111', name='vol2', address='cluj', phone='0755555555'}, teledon.model.Donator{ID='112', name='dudu', address='cluj', phone='0744444444'}, teledon.model.Donator{ID='115', name='vasile', address='timis', phone='0733333333'}, teledon.model.Donator{ID='117', name='marian', address='sibiu', phone='0711212121'}])
+28 Apr 2019 18:41:24,362 TRACE teledon.persistence.repository.DonatorRepository 27 findOne - Enter Finding enitity with name marian 
+28 Apr 2019 18:41:24,363 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:24,363 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@c944e37)
+28 Apr 2019 18:41:24,363 TRACE teledon.persistence.repository.DonatorRepository 42 findOne - Exit with(teledon.model.Donator{ID='117', name='marian', address='sibiu', phone='0711212121'})
+28 Apr 2019 18:41:24,364 TRACE teledon.persistence.repository.CazCaritabilRepository 24 findOne - Enter Finding enitity with id 3 
+28 Apr 2019 18:41:24,364 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:24,364 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:24,364 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:24,364 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:24,364 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:24,365 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:24,366 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@43ff3770)
+28 Apr 2019 18:41:24,367 TRACE teledon.persistence.repository.CazCaritabilRepository 36 findOne - Exit with(teledon.model.CazCaritabil{ID='3', totalSum=35270.0})
+28 Apr 2019 18:41:24,369 TRACE teledon.persistence.repository.DonatieRepository 27 save - Enter Saving entity teledon.model.Donatie{IDCazCaritabil=teledon.model.CazCaritabil{ID='3', totalSum=35270.0}, teledon.model.Donator=teledon.model.Donator{ID='117', name='marian', address='sibiu', phone='0711212121'}, sumaDonata=20.0} 
+28 Apr 2019 18:41:24,369 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:24,369 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:24,369 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:24,369 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:24,370 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:24,370 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:24,371 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@59145038)
+28 Apr 2019 18:41:24,554 TRACE teledon.persistence.repository.DonatieRepository 41 save - Exit
+28 Apr 2019 18:41:24,556 TRACE teledon.persistence.repository.CazCaritabilRepository 108 update - Enter Updating entity teledon.model.CazCaritabil{ID='3', totalSum=35290.0} 
+28 Apr 2019 18:41:24,557 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:24,557 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@43ff3770)
+28 Apr 2019 18:41:24,704 TRACE teledon.persistence.repository.CazCaritabilRepository 120 update - Exit
+28 Apr 2019 18:41:24,705 TRACE teledon.persistence.repository.CazCaritabilRepository 56 findAll - Enter
+28 Apr 2019 18:41:24,706 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:24,706 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:24,706 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:24,706 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:24,706 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:24,707 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:24,708 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@775f48db)
+28 Apr 2019 18:41:24,711 TRACE teledon.persistence.repository.CazCaritabilRepository 74 findAll - Exit with([teledon.model.CazCaritabil{ID='1', totalSum=1740.0}, teledon.model.CazCaritabil{ID='2', totalSum=1282.0}, teledon.model.CazCaritabil{ID='3', totalSum=35290.0}])
+28 Apr 2019 18:41:42,281 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name vasile 
+28 Apr 2019 18:41:42,282 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:42,282 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@5b88d1f6)
+28 Apr 2019 18:41:42,283 TRACE teledon.persistence.repository.VoluntarRepository 35 findOne - Exit with(teledon.model.Voluntar{ID='2', name='vasile', password='user'})
+28 Apr 2019 18:41:43,285 TRACE teledon.persistence.repository.CazCaritabilRepository 56 findAll - Enter
+28 Apr 2019 18:41:43,285 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:43,286 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:43,287 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:43,287 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:43,288 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:43,288 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:43,292 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@f89819)
+28 Apr 2019 18:41:43,296 TRACE teledon.persistence.repository.CazCaritabilRepository 74 findAll - Exit with([teledon.model.CazCaritabil{ID='1', totalSum=1740.0}, teledon.model.CazCaritabil{ID='2', totalSum=1282.0}, teledon.model.CazCaritabil{ID='3', totalSum=35290.0}])
+28 Apr 2019 18:41:48,351 TRACE teledon.persistence.repository.DonatorRepository 56 findAll - Enter
+28 Apr 2019 18:41:48,351 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:48,352 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@c944e37)
+28 Apr 2019 18:41:48,353 TRACE teledon.persistence.repository.DonatorRepository 76 findAll - Exit with([teledon.model.Donator{ID='1', name='maria', address='cluj', phone='0711111111'}, teledon.model.Donator{ID='2', name='george', address='turda', phone='0722222222'}, teledon.model.Donator{ID='108', name='ioan', address='iasi', phone='0799999999'}, teledon.model.Donator{ID='109', name='blaga', address='cluj', phone='0766666666'}, teledon.model.Donator{ID='110', name='diana', address='cluj', phone='0777777777'}, teledon.model.Donator{ID='111', name='vol2', address='cluj', phone='0755555555'}, teledon.model.Donator{ID='112', name='dudu', address='cluj', phone='0744444444'}, teledon.model.Donator{ID='115', name='vasile', address='timis', phone='0733333333'}, teledon.model.Donator{ID='117', name='marian', address='sibiu', phone='0711212121'}])
+28 Apr 2019 18:41:54,327 TRACE teledon.persistence.repository.DonatorRepository 27 findOne - Enter Finding enitity with name vol2 
+28 Apr 2019 18:41:54,328 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:54,328 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@c944e37)
+28 Apr 2019 18:41:54,329 TRACE teledon.persistence.repository.DonatorRepository 42 findOne - Exit with(teledon.model.Donator{ID='111', name='vol2', address='cluj', phone='0755555555'})
+28 Apr 2019 18:41:54,329 TRACE teledon.persistence.repository.CazCaritabilRepository 24 findOne - Enter Finding enitity with id 1 
+28 Apr 2019 18:41:54,329 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:54,329 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:54,330 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:54,330 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:54,330 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:54,330 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:54,331 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@54c7ba3e)
+28 Apr 2019 18:41:54,332 TRACE teledon.persistence.repository.CazCaritabilRepository 36 findOne - Exit with(teledon.model.CazCaritabil{ID='1', totalSum=1740.0})
+28 Apr 2019 18:41:54,333 TRACE teledon.persistence.repository.DonatieRepository 27 save - Enter Saving entity teledon.model.Donatie{IDCazCaritabil=teledon.model.CazCaritabil{ID='1', totalSum=1740.0}, teledon.model.Donator=teledon.model.Donator{ID='111', name='vol2', address='cluj', phone='0755555555'}, sumaDonata=60.0} 
+28 Apr 2019 18:41:54,333 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:54,333 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:54,333 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:54,334 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:54,334 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:54,334 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:54,335 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@14310883)
+28 Apr 2019 18:41:54,508 TRACE teledon.persistence.repository.DonatieRepository 41 save - Exit
+28 Apr 2019 18:41:54,509 TRACE teledon.persistence.repository.CazCaritabilRepository 108 update - Enter Updating entity teledon.model.CazCaritabil{ID='1', totalSum=1800.0} 
+28 Apr 2019 18:41:54,510 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:54,510 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@54c7ba3e)
+28 Apr 2019 18:41:54,665 TRACE teledon.persistence.repository.CazCaritabilRepository 120 update - Exit
+28 Apr 2019 18:41:54,668 TRACE teledon.persistence.repository.CazCaritabilRepository 56 findAll - Enter
+28 Apr 2019 18:41:54,668 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:41:54,669 TRACE teledon.persistence.repository.JdbcUtils 23 getNewConnection - Enter
+28 Apr 2019 18:41:54,669 INFO  teledon.persistence.repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/Documente/sem4/MPP/TemeProiect/Teledon.db
+28 Apr 2019 18:41:54,670 INFO  teledon.persistence.repository.JdbcUtils 31 getNewConnection - user: null
+28 Apr 2019 18:41:54,671 INFO  teledon.persistence.repository.JdbcUtils 32 getNewConnection - pass: null
+28 Apr 2019 18:41:54,672 INFO  teledon.persistence.repository.JdbcUtils 38 getNewConnection - Loaded driver ...org.sqlite.JDBC
+28 Apr 2019 18:41:54,674 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@6895e31d)
+28 Apr 2019 18:41:54,676 TRACE teledon.persistence.repository.CazCaritabilRepository 74 findAll - Exit with([teledon.model.CazCaritabil{ID='1', totalSum=1800.0}, teledon.model.CazCaritabil{ID='2', totalSum=1282.0}, teledon.model.CazCaritabil{ID='3', totalSum=35290.0}])
+28 Apr 2019 18:42:00,562 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name ion 
+28 Apr 2019 18:42:00,563 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:42:00,563 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@5b88d1f6)
+28 Apr 2019 18:42:00,563 TRACE teledon.persistence.repository.VoluntarRepository 35 findOne - Exit with(teledon.model.Voluntar{ID='1', name='ion', password='user'})
+28 Apr 2019 18:42:08,162 TRACE teledon.persistence.repository.VoluntarRepository 22 findOne - Enter Finding enitity with name vasile 
+28 Apr 2019 18:42:08,162 TRACE teledon.persistence.repository.JdbcUtils 56 getConnection - Enter
+28 Apr 2019 18:42:08,163 TRACE teledon.persistence.repository.JdbcUtils 67 getConnection - Exit with(org.sqlite.SQLiteConnection@5b88d1f6)
+28 Apr 2019 18:42:08,163 TRACE teledon.persistence.repository.VoluntarRepository 35 findOne - Exit with(teledon.model.Voluntar{ID='2', name='vasile', password='user'})

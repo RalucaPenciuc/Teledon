@@ -56,8 +56,12 @@ public class cazCaritabilWindowController implements ITeledonObserver {
     public void setService(Stage stage, ITeledonServer server) {
         this.stage = stage;
         this.server = server;
-        observableList = FXCollections.observableList(StreamSupport.stream(server.findAllCazuriCaritabile().spliterator(), false)
-                .collect(Collectors.toList()));
+        try {
+            observableList = FXCollections.observableList(StreamSupport.stream(server.findAllCazuriCaritabile().spliterator(), false)
+                    .collect(Collectors.toList()));
+        } catch (TeledonException e) {
+            e.printStackTrace();
+        }
         tableViewCaz.setItems(observableList);
     }
 
@@ -94,10 +98,16 @@ public class cazCaritabilWindowController implements ITeledonObserver {
 
     @FXML private void searchHandler(){
         String nume = searchNume.getText();
-        Iterable<Donator> donatori = server.cautaDonatori(nume);
-        ObservableList<Donator> obs = FXCollections.observableList(StreamSupport.stream(donatori.spliterator(), false)
-                .collect(Collectors.toList()));
-        tableViewDonator.setItems(obs);
+        Iterable<Donator> donatori;
+        try {
+            donatori = server.cautaDonatori(nume);
+            ObservableList<Donator> obs = FXCollections.observableList(StreamSupport.stream(donatori.spliterator(), false)
+                    .collect(Collectors.toList()));
+            tableViewDonator.setItems(obs);
+
+        } catch (TeledonException e) {
+            e.printStackTrace();
+        }
     }
 
     public void logout() {

@@ -17,5 +17,6 @@ dependencies {
     compile project (':TeledonModel')
     compile project (':TeledonServices')
     compile project (':TeledonPersistence')
-    compile project (':TeledonNetworking')
+//    compile project (':TeledonNetworking')
+    compile project (':TeledonNetworkingProtobuf')
 }

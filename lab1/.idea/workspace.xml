@@ -35,6 +35,9 @@
     <ignored path="$PROJECT_DIR$/TeledonPersistence/.gradle/" />
     <ignored path="$PROJECT_DIR$/TeledonPersistence/build/" />
     <ignored path="$PROJECT_DIR$/TeledonPersistence/out/" />
+    <ignored path="$PROJECT_DIR$/TeledonNetworkingProtobuf/.gradle/" />
+    <ignored path="$PROJECT_DIR$/TeledonNetworkingProtobuf/build/" />
+    <ignored path="$PROJECT_DIR$/TeledonNetworkingProtobuf/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,26 +83,7 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
-      <ProjectState>
-        <dataType path="$PROJECT_DIR$/client">
-          <ModuleState>
-            <id value="com.intellij.openapi.externalSystem.model.project.ContentRootData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.ModuleData" />
-            <id value="com.intellij.openapi.externalSystem.model.task.TaskData" />
-            <id value="org.jetbrains.plugins.gradle.model.GradleExtensions" />
-            <id value="org.jetbrains.plugins.gradle.model.data.BuildScriptClasspathData" />
-          </ModuleState>
-        </dataType>
-        <dataType path="$PROJECT_DIR$/server">
-          <ModuleState>
-            <id value="com.intellij.openapi.externalSystem.model.project.ContentRootData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.ModuleData" />
-            <id value="com.intellij.openapi.externalSystem.model.task.TaskData" />
-            <id value="org.jetbrains.plugins.gradle.model.GradleExtensions" />
-            <id value="org.jetbrains.plugins.gradle.model.data.BuildScriptClasspathData" />
-          </ModuleState>
-        </dataType>
-      </ProjectState>
+      <ProjectState />
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
@@ -248,59 +232,99 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="2020785474">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.82" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="9" />
+          <entry key="JAVA" value="34" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PROTO" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="160" />
+          <entry key="JAVA" value="3279" />
+          <entry key="PLAIN_TEXT" value="111" />
+          <entry key="PROTO" value="796" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-364003800">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.87" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSFile" value="1" />
+          <entry key="Erlang Terms" value="1" />
+          <entry key="Groovy" value="7" />
+          <entry key="JAVA" value="38" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PROTO" value="1" />
+          <entry key="Properties" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Erlang Terms" value="17" />
+          <entry key="Groovy" value="2" />
+          <entry key="JAVA" value="5279" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PROTO" value="22" />
+          <entry key="Properties" value="16" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/java/StartTeledonServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/StartObjectClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="35" column="71" lean-forward="true" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/java/teledon/server/TeledonServerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonClientObjectWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonServerObjectProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2958">
-              <caret line="185" selection-start-line="185" selection-end-line="185" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/cazCaritabilWindowController.java">
+        <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/java/StartTeledonProtobufServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state>
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/StartProtobufClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonServerProtobufProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1854">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonClientProtobufWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1326">
+              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -355,10 +379,6 @@
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":networking" />
-                <option name="path" value="$PROJECT_DIR$/networking" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
                 <option name="name" value=":TeledonClient" />
                 <option name="path" value="$PROJECT_DIR$/TeledonClient" />
               </ExternalProjectPojo>
@@ -371,8 +391,8 @@
                 <option name="path" value="$PROJECT_DIR$/TeledonNetworking" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":TeledonPersistance" />
-                <option name="path" value="$PROJECT_DIR$/TeledonPersistance" />
+                <option name="name" value=":TeledonNetworkingProtobuf" />
+                <option name="path" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":TeledonPersistence" />
@@ -957,58 +977,133 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/TeledonPersistance">
+        <entry key="$PROJECT_DIR$/TeledonNetworkingProtobuf">
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':TeledonPersistance'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
+                <option name="description" value="Displays the components produced by project ':TeledonNetworkingProtobuf'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':TeledonPersistance'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':TeledonNetworkingProtobuf'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':TeledonPersistance'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':TeledonNetworkingProtobuf'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':TeledonPersistance'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
+                <option name="description" value="Displays all buildscript dependencies declared in project ':TeledonNetworkingProtobuf'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':TeledonPersistance'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
-                <option name="name" value="dependencyInsight" />
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':TeledonPersistance'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
-                <option name="name" value="dependencies" />
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
-                <option name="name" value="help" />
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':TeledonPersistance'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
+                <option name="description" value="Displays the configuration model of project ':TeledonNetworkingProtobuf'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':TeledonPersistance'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
-                <option name="name" value="properties" />
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':TeledonPersistance'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonPersistance" />
+                <option name="description" value="Displays the tasks runnable from project ':TeledonNetworkingProtobuf'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
                 <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':TeledonNetworkingProtobuf'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':TeledonNetworkingProtobuf'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':TeledonNetworkingProtobuf'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
+                <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1406,81 +1501,26 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/networking">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':networking'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':networking'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':networking'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':networking'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':networking'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':networking'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':networking'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':networking'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':networking'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/networking" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="15540167500901" />
+        <entry key="$PROJECT_DIR$" value="17105946729359" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/TeledonClient/build.gradle" value="3660238002" />
+        <entry key="$PROJECT_DIR$/TeledonClient/build.gradle" value="1915982291" />
         <entry key="$PROJECT_DIR$/TeledonModel/build.gradle" value="756026385" />
         <entry key="$PROJECT_DIR$/TeledonNetworking/build.gradle" value="4254757413" />
+        <entry key="$PROJECT_DIR$/TeledonNetworkingProtobuf/build.gradle" value="1296252428" />
         <entry key="$PROJECT_DIR$/TeledonPersistance/build.gradle" value="1507984828" />
         <entry key="$PROJECT_DIR$/TeledonPersistence/build.gradle" value="1391914029" />
-        <entry key="$PROJECT_DIR$/TeledonServer/build.gradle" value="4065524445" />
+        <entry key="$PROJECT_DIR$/TeledonServer/build.gradle" value="923413394" />
         <entry key="$PROJECT_DIR$/TeledonServices/build.gradle" value="1016891354" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2332202128" />
         <entry key="$PROJECT_DIR$/client/build.gradle" value="1222945775" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
         <entry key="$PROJECT_DIR$/networking/build.gradle" value="1222945775" />
         <entry key="$PROJECT_DIR$/server/build.gradle" value="1222945775" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="4124166102" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="391333473" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1515,6 +1555,13 @@
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="path" value="$PROJECT_DIR$/TeledonNetworking" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/TeledonNetworkingProtobuf">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/TeledonNetworkingProtobuf" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -1665,26 +1712,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TeledonPersistence/src/main/java/teledon/persistence/repository/VoluntarRepository.java" />
-        <option value="$PROJECT_DIR$/TeledonPersistence/src/main/java/teledon/persistence/repository/DonatieRepository.java" />
-        <option value="$PROJECT_DIR$/TeledonPersistence/src/main/java/teledon/persistence/repository/CazCaritabilRepository.java" />
-        <option value="$PROJECT_DIR$/TeledonPersistence/src/main/java/teledon/persistence/ICazCaritabilRepository.java" />
-        <option value="$PROJECT_DIR$/TeledonPersistence/src/main/java/teledon/persistence/repository/DonatorRepository.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/build.gradle" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/utils/AbstractConcurrentServer.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/Response.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/Request.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/OkResponse.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/ErrorResponse.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/LogoutRequest.java" />
-        <option value="$PROJECT_DIR$/TeledonClient/src/main/resources/cazCaritabilWindow.fxml" />
-        <option value="$PROJECT_DIR$/TeledonModel/src/main/java/teledon/model/Voluntar.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/LoginRequest.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/SearchRequest.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/AddRequest.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/DonatorDTO.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/DonatieDTO.java" />
         <option value="$PROJECT_DIR$/TeledonModel/src/main/java/teledon/model/CazCaritabil.java" />
         <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/CazCaritabilDTO.java" />
         <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/GetCazuriRequest.java" />
@@ -1696,7 +1723,6 @@
         <option value="$PROJECT_DIR$/TeledonServices/build.gradle" />
         <option value="$PROJECT_DIR$/TeledonModel/src/main/java/teledon/model/DTODonatie.java" />
         <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/UpdateResponse.java" />
-        <option value="$PROJECT_DIR$/TeledonServices/src/main/java/teledon/services/ITeledonServer.java" />
         <option value="$PROJECT_DIR$/TeledonClient/src/main/java/StartObjectClient.java" />
         <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/utils/AbstractServer.java" />
         <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/utils/TeledonObjectConcurrentServer.java" />
@@ -1713,8 +1739,29 @@
         <option value="$PROJECT_DIR$/TeledonClient/src/main/resources/mainWindow.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/cazCaritabilWindow.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/cazCaritabilWindowController.java" />
-        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonClientObjectWorker.java" />
         <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonServerObjectProxy.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/ProtobufTeledonWorker.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/dto/DTOUtils.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/build.gradle" />
+        <option value="$PROJECT_DIR$/proto/GenerateClasses.bat" />
+        <option value="$PROJECT_DIR$/TeledonServer/src/main/java/StartTeledonProtobufServer.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/ProtobufTeledonProxy.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/utils/TeledonObjectConcurrentServer.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/utils/TeledonProtobufConcurrentServer.java" />
+        <option value="$PROJECT_DIR$/TeledonModel/src/main/java/teledon/model/Voluntar.java" />
+        <option value="$PROJECT_DIR$/TeledonServer/build.gradle" />
+        <option value="$PROJECT_DIR$/TeledonClient/build.gradle" />
+        <option value="$PROJECT_DIR$/TeledonClient/src/main/java/StartProtobufClient.java" />
+        <option value="$PROJECT_DIR$/bd.config" />
+        <option value="$PROJECT_DIR$/TeledonServer/src/main/resources/teledonserver.properties" />
+        <option value="$PROJECT_DIR$/TeledonServices/src/main/java/teledon/services/ITeledonServer.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonClientObjectWorker.java" />
+        <option value="$PROJECT_DIR$/proto/TeledonProtocol.proto" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonProtobufs.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/ProtobufUtils.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonServerProtobufProxy.java" />
+        <option value="$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonClientProtobufWorker.java" />
         <option value="$PROJECT_DIR$/TeledonClient/src/main/java/cazCaritabilWindowController.java" />
       </list>
     </option>
@@ -1726,17 +1773,17 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-5" />
-    <option name="width" value="1377" />
-    <option name="height" value="572" />
+    <option name="x" value="675" />
+    <option name="width" value="700" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1754,12 +1801,12 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555168354538" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556466175127" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="GenericSQL&#10;TSQL&#10;SQLite&#10;ClickHouse" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CURSURI/Curs 4/Curs4/JavaChatSockets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CURSURI/Curs 7/Curs7/ChatProtobuff_v3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -1776,23 +1823,23 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\src\main\resources" />
-      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\src\main\java" />
-      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\TeledonServer\src\main\resources" />
-      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\TeledonClient\src\main\resources" />
-      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\client\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="teledon.model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\TeledonClient\src\main\resources" />
       <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\client\src\main\resources" />
       <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\src\main\resources\fxml" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="teledon.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documente\sem4\MPP\TemeProiect\tema5\lab1\TeledonNetworkingProtobuf\src\main\java\teledon\network\protobufprotocol" />
+      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\tema5\lab1\TeledonNetworkingProtobuf\src\main\java\teledon\network" />
+      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\src\main\resources" />
+      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\src\main\java" />
+      <recent name="D:\Documente\AN2\Sem2\MPP\TemeProiect\lab1\TeledonServer\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1807,7 +1854,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.StartProtobufClient">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="lab1_main" />
@@ -1822,6 +1869,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartProtobufClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StartProtobufClient" />
+      <module name="TeledonClient_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartTeledonProtobufServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StartTeledonProtobufServer" />
+      <module name="TeledonServer_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StartTeledonServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StartTeledonServer" />
       <module name="TeledonServer_main" />
@@ -1829,56 +1890,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lab1:TeledonClient [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/TeledonClient" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="lab1:TeledonServer [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/TeledonServer" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
+    <configuration name="All Features in: proto" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/proto" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="lab1" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: proto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber java.All Features in: proto" />
+      <item itemvalue="Application.StartTeledonProtobufServer" />
       <item itemvalue="Application.StartObjectClient" />
       <item itemvalue="Application.StartTeledonServer" />
-      <item itemvalue="Gradle.lab1:TeledonClient [build]" />
-      <item itemvalue="Gradle.lab1:TeledonServer [build]" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.StartProtobufClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartProtobufClient" />
+        <item itemvalue="Application.StartTeledonProtobufServer" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.StartObjectClient" />
         <item itemvalue="Application.StartTeledonServer" />
-        <item itemvalue="Gradle.lab1:TeledonServer [build]" />
-        <item itemvalue="Gradle.lab1:TeledonClient [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -1912,19 +1955,15 @@
       <workItem from="1554808324679" duration="5113000" />
       <workItem from="1555079653031" duration="32656000" />
       <workItem from="1555166377355" duration="1960000" />
+      <workItem from="1556273832356" duration="787000" />
+      <workItem from="1556274857524" duration="77000" />
+      <workItem from="1556274980097" duration="10033000" />
+      <workItem from="1556404079821" duration="5954000" />
+      <workItem from="1556457914260" duration="8248000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VoluntarRepositoryTest_save - 2019.03.17 at 19h 06m 16s.xml">
-      <configuration name="VoluntarRepositoryTest.save" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VoluntarRepositoryTest_save - 2019.03.17 at 19h 34m 57s.xml">
-      <configuration name="VoluntarRepositoryTest.save" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DonatorRepositoryTest_findOne - 2019.03.17 at 20h 11m 14s.xml">
-      <configuration name="DonatorRepositoryTest.findOne" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DonatorRepositoryTest_findOne - 2019.03.17 at 20h 12m 35s.xml">
       <configuration name="DonatorRepositoryTest.findOne" configurationId="JUnit" />
     </history-entry>
@@ -1946,15 +1985,23 @@
     <history-entry file="DonatorRepositoryTest_findOne - 2019.03.18 at 10h 30m 38s.xml">
       <configuration name="DonatorRepositoryTest.findOne" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_Features_in__proto - 2019.04.26 at 15h 09m 45s.xml">
+      <configuration name="All Features in: proto" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_Features_in__proto - 2019.04.26 at 15h 36m 18s.xml">
+      <configuration name="All Features in: proto" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_Features_in__proto - 2019.04.26 at 16h 14m 35s.xml">
+      <configuration name="All Features in: proto" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198801000" />
+    <option name="totallyTimeSpent" value="223900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23071104" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23903178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1963,19 +2010,19 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.552459" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46885246" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34590164" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35737705" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.5762712" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.57570714" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32459018" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3295082" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.17377049" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1990,6 +2037,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -2013,317 +2063,32 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="input.readObject()" language="JAVA" />
+        <watch expression="server.findAllCazuriCaritabile()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>input.readObject()</expression-string>
+        <expression-string>server.findAllCazuriCaritabile()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>server.findAllCazuriCaritabile()</expression-string>
+        <expression-string>input.readObject()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/BlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="261" column="6" selection-start-line="261" selection-start-column="6" selection-end-line="261" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/locks/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="448" selection-start-line="448" selection-end-line="448" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/SearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/ObjectOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="717" column="16" selection-start-line="717" selection-start-column="16" selection-end-line="717" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/LogoutRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/utils/TeledonObjectConcurrentServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonServices/src/main/java/teledon/services/ITeledonServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/DTOUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="77" column="54" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c884e997-23f1-45bb-9198-a6d3da4a83a8/schema/main/table/donatii">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/ErrorResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/GetCazuriResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/GetDonatoriResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/OkResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/AddedResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/function/BiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/UpdateResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonServices/src/main/java/teledon/services/ITeledonObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/ObjectInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="2959" selection-start-line="2959" selection-end-line="2959" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/mainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Voluntar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/HasID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Donator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Donatie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/CazCaritabil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/VoluntarRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/DonatorRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/DonatieRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/CazCaritabilRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/CazCaritabilEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ChangeEventType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/validation/CazCaritabilValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/resources/cazCaritabilWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/cazCaritabilWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/resources/mainWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="173" selection-start-line="8" selection-start-column="173" selection-end-line="8" selection-end-column="173" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="173" selection-start-line="8" selection-start-column="167" selection-end-line="8" selection-end-column="173" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/mainWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2336,9 +2101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1047">
           <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2356,45 +2118,314 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/java/teledon/server/TeledonServerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/dto/CazCaritabilDTO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/dto/DonatorDTO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/utils/ServerException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/dto/DonatieDTO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/utils/AbstractServer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/utils/AbstractConcurrentServer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonServerObjectProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="185" column="58" selection-start-line="185" selection-start-column="44" selection-end-line="185" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/CazCaritabilDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/DonatorDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/dto/DonatieDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/dto/DTOUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/CSharpFiles/TeledonProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2754" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-145187" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-145187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/utils/TeledonProtobufConcurrentServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonModel/src/main/java/teledon/model/Voluntar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonServer/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/java/StartTeledonServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        <state relative-caret-position="248">
+          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/utils/TeledonObjectConcurrentServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonClient/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/StartObjectClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="35" column="71" lean-forward="true" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+        <state relative-caret-position="133">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/java/teledon/server/TeledonServerImpl.java">
+    <entry file="file://$PROJECT_DIR$/bd.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="17">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonPersistence/src/main/java/teledon/persistence/repository/VoluntarRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/resources/teledonserver.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/resources/teledonclient.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonPersistence/src/main/java/teledon/persistence/repository/JdbcUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/mainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonModel/src/main/java/teledon/model/CazCaritabil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonServices/src/main/java/teledon/services/ITeledonServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonClientObjectWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="528">
+          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeledonNetworking/src/main/java/teledon/network/objectprotocol/TeledonServerObjectProxy.java">
+    <entry file="file://$PROJECT_DIR$/proto/GenerateClasses.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonProtobufs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="6065" selection-start-line="6065" selection-end-line="6065" />
+          <folding>
+            <element signature="e#22901#23259#0" expanded="true" />
+            <element signature="e#23258#23259#0" expanded="true" />
+            <element signature="e#45943#46313#0" expanded="true" />
+            <element signature="e#46312#46313#0" expanded="true" />
+            <element signature="e#72527#72882#0" expanded="true" />
+            <element signature="e#72881#72882#0" expanded="true" />
+            <element signature="e#106113#106468#0" expanded="true" />
+            <element signature="e#106467#106468#0" expanded="true" />
+            <element signature="e#115941#116130#0" expanded="true" />
+            <element signature="e#116129#116130#0" expanded="true" />
+            <element signature="e#155780#156156#0" expanded="true" />
+            <element signature="e#156155#156156#0" expanded="true" />
+            <element signature="e#165770#165959#0" expanded="true" />
+            <element signature="e#165958#165959#0" expanded="true" />
+            <element signature="e#212248#212627#0" expanded="true" />
+            <element signature="e#212626#212627#0" expanded="true" />
+            <element signature="e#216999#217305#0" expanded="true" />
+            <element signature="e#217304#217305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/JavaFiles/teledon/network/protobufprotocol/TeledonProtobufs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/TeledonProtocol.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/ProtobufUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/cazCaritabilWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="-421">
+          <caret line="108" column="32" lean-forward="true" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonServerProtobufProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1854">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonClient/src/main/java/StartProtobufClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonNetworkingProtobuf/src/main/java/teledon/network/protobufprotocol/TeledonClientProtobufWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeledonServer/src/main/java/StartTeledonProtobufServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -2427,6 +2458,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2474,7 +2506,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: junit:junit:4.11</last-edited>
+          <last-edited>Gradle: com.google.protobuf:protobuf-java:3.6.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
