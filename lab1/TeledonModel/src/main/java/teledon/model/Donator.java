@@ -1,6 +1,8 @@
 package teledon.model;
 
-public class Donator implements HasID<String> {
+import java.io.Serializable;
+
+public class Donator implements HasID<String>, Serializable {
     private String ID;
     private String name;
     private String address;

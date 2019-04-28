@@ -11,15 +11,18 @@ import teledon.model.DTODonatie;
 import teledon.model.Donator;
 import teledon.model.Voluntar;
 import teledon.services.ITeledonObserver;
-import teledon.services.ITeledonServer;
+import teledon.services.ITeledonServices;
 import teledon.services.TeledonException;
 
+import java.io.Serializable;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-public class cazCaritabilWindowController implements ITeledonObserver {
+public class CazCaritabilWindowController extends UnicastRemoteObject implements ITeledonObserver, Serializable {
     private Stage stage;
-    private ITeledonServer server;
+    private ITeledonServices server;
     private Voluntar user;
     private ObservableList<CazCaritabil> observableList;
 
@@ -41,7 +44,9 @@ public class cazCaritabilWindowController implements ITeledonObserver {
     @FXML private TextField sumaDonata;
     @FXML private TextField searchNume;
 
-    public cazCaritabilWindowController() {}
+    public CazCaritabilWindowController() throws RemoteException {
+    }
+
 
     @FXML private void initialize() {
         idColumn.setCellValueFactory(new PropertyValueFactory<>("ID"));
@@ -53,7 +58,7 @@ public class cazCaritabilWindowController implements ITeledonObserver {
         telefonDColumn.setCellValueFactory(new PropertyValueFactory<>("Phone"));
     }
 
-    public void setService(Stage stage, ITeledonServer server) {
+    public void setService(Stage stage, ITeledonServices server) {
         this.stage = stage;
         this.server = server;
         observableList = FXCollections.observableList(StreamSupport.stream(server.findAllCazuriCaritabile().spliterator(), false)
@@ -61,7 +66,7 @@ public class cazCaritabilWindowController implements ITeledonObserver {
         tableViewCaz.setItems(observableList);
     }
 
-    public void setServer(ITeledonServer server) {
+    public void setServer(ITeledonServices server) {
         this.server = server;
     }
 

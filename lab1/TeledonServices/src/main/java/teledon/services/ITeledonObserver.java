@@ -3,6 +3,9 @@ package teledon.services;
 import teledon.model.CazCaritabil;
 import teledon.model.DTODonatie;
 
-public interface ITeledonObserver {
-    void updateCazuriList(Iterable<CazCaritabil> cazuriCaritabile) throws TeledonException;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface ITeledonObserver extends Remote {
+    void updateCazuriList(Iterable<CazCaritabil> cazuriCaritabile) throws TeledonException, RemoteException;
 }

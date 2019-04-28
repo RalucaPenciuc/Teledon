@@ -1,6 +1,8 @@
 package teledon.model;
 
-public class DTODonatie {
+import java.io.Serializable;
+
+public class DTODonatie implements Serializable {
     private String idCazCaritabil;
     private String numeDonator;
     private String adresaDonator;

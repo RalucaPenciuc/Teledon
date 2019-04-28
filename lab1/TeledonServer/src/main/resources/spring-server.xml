@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:properties id="jdbcProperties" location="classpath:bd.config"/>
+
+    <bean id="voluntarRepository" class="teledon.persistence.repository.VoluntarRepository">
+        <constructor-arg ref="jdbcProperties"/>
+    </bean>
+    <bean id="cazCaritabilRepository" class="teledon.persistence.repository.CazCaritabilRepository">
+        <constructor-arg ref="jdbcProperties"/>
+    </bean>
+    <bean id="donatorRepository" class="teledon.persistence.repository.DonatorRepository">
+        <constructor-arg ref="jdbcProperties"/>
+    </bean>
+    <bean id="donatieRepository" class="teledon.persistence.repository.DonatieRepository">
+        <constructor-arg ref="jdbcProperties"/>
+    </bean>
+
+    <bean id="teledonService" class="teledon.server.TeledonServerImpl">
+        <constructor-arg ref="voluntarRepository"/>
+        <constructor-arg ref="cazCaritabilRepository"/>
+        <constructor-arg ref="donatorRepository"/>
+        <constructor-arg ref="donatieRepository"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="Teledon"/>
+        <property name="service" ref="teledonService"/>
+        <property name="serviceInterface" value="teledon.services.ITeledonServices"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+
+</beans>

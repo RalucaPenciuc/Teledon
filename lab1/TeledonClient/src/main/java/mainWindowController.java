@@ -10,16 +10,21 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import teledon.model.CazCaritabil;
 import teledon.model.Voluntar;
-import teledon.services.ITeledonServer;
+import teledon.services.ITeledonObserver;
+import teledon.services.ITeledonServices;
 import teledon.services.TeledonException;
 
 import java.io.IOException;
+import java.io.Serializable;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
-public class mainWindowController {
-    private ITeledonServer server;
-    private cazCaritabilWindowController teledonController;
+public class MainWindowController extends UnicastRemoteObject implements ITeledonObserver, Serializable {
+    private ITeledonServices server;
     private Voluntar voluntar;
+    private CazCaritabilWindowController teledonController;
 
     Parent mainChatParent;
 
@@ -27,11 +32,12 @@ public class mainWindowController {
     @FXML private PasswordField parolaUtilizator;
     @FXML private Button loginButton;
 
-    public void setServer(ITeledonServer server) {
-        this.server = server;
+    public MainWindowController() throws RemoteException {
     }
 
-    public void setTeledonController(cazCaritabilWindowController teledonController) { this.teledonController = teledonController; }
+    public void setServer(ITeledonServices server) { this.server = server; }
+
+    public void setTeledonController(CazCaritabilWindowController teledonController) { this.teledonController = teledonController; }
 
     public void setParent(Parent p){ mainChatParent = p; }
 
@@ -45,7 +51,7 @@ public class mainWindowController {
             stage.setTitle("Teledon");
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(mainWindowController.class.getResource("/cazCaritabilWindow.fxml"));
+            loader.setLocation(MainWindowController.class.getResource("/cazCaritabilWindow.fxml"));
             AnchorPane root = loader.load();
             stage.setScene(new Scene(root));
 
@@ -74,5 +80,10 @@ public class mainWindowController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void updateCazuriList(Iterable<CazCaritabil> cazuriCaritabile) throws TeledonException, RemoteException {
+
     }
 }

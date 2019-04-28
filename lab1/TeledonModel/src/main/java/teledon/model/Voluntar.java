@@ -1,6 +1,8 @@
 package teledon.model;
 
-public class Voluntar implements HasID<String> {
+import java.io.Serializable;
+
+public class Voluntar implements HasID<String>, Serializable {
     private String ID;
     private String name;
     private String password;

@@ -1,6 +1,8 @@
 package teledon.model;
 
-public class CazCaritabil implements HasID<String> {
+import java.io.Serializable;
+
+public class CazCaritabil implements HasID<String>, Serializable {
     private String ID;
     private double totalSum;
 

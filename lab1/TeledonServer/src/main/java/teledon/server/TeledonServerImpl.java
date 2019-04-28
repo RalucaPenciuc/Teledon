@@ -1,15 +1,15 @@
 package teledon.server;
 
 import teledon.model.*;
-import teledon.network.dto.DonatieDTO;
 import teledon.persistence.repository.CazCaritabilRepository;
 import teledon.persistence.repository.DonatieRepository;
 import teledon.persistence.repository.DonatorRepository;
 import teledon.persistence.repository.VoluntarRepository;
 import teledon.services.ITeledonObserver;
-import teledon.services.ITeledonServer;
+import teledon.services.ITeledonServices;
 import teledon.services.TeledonException;
 
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -17,7 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class TeledonServerImpl implements ITeledonServer {
+public class TeledonServerImpl implements ITeledonServices {
     private VoluntarRepository voluntarRepository;
     private CazCaritabilRepository cazRepository;
     private DonatorRepository donatorRepository;
@@ -108,6 +108,8 @@ public class TeledonServerImpl implements ITeledonServer {
                         System.out.println("Sended updaded list to user " + user);
                     }
                     catch (TeledonException e) {
+                        e.printStackTrace();
+                    } catch (RemoteException e) {
                         e.printStackTrace();
                     }
                 });

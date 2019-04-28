@@ -3,7 +3,7 @@ package teledon.network.objectprotocol;
 import teledon.model.*;
 import teledon.network.dto.*;
 import teledon.services.ITeledonObserver;
-import teledon.services.ITeledonServer;
+import teledon.services.ITeledonServices;
 import teledon.services.TeledonException;
 
 import java.io.IOException;
@@ -12,14 +12,14 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class TeledonClientObjectWorker implements Runnable, ITeledonObserver {
-    private ITeledonServer server;
+    private ITeledonServices server;
     private Socket connection;
 
     private ObjectInputStream input;
     private ObjectOutputStream output;
     private volatile boolean connected;
 
-    public TeledonClientObjectWorker(ITeledonServer server, Socket connection) {
+    public TeledonClientObjectWorker(ITeledonServices server, Socket connection) {
         this.server = server;
         this.connection = connection;
 

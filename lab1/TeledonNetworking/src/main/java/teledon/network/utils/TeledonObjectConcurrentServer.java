@@ -1,13 +1,13 @@
 package teledon.network.utils;
 
 import teledon.network.objectprotocol.TeledonClientObjectWorker;
-import teledon.services.ITeledonServer;
+import teledon.services.ITeledonServices;
 import java.net.Socket;
 
 public class TeledonObjectConcurrentServer extends AbstractConcurrentServer {
-    private ITeledonServer teledonServer;
+    private ITeledonServices teledonServer;
 
-    public TeledonObjectConcurrentServer(int port, ITeledonServer teledonServer) {
+    public TeledonObjectConcurrentServer(int port, ITeledonServices teledonServer) {
         super(port);
         this.teledonServer = teledonServer;
         System.out.println("Teledon - TeledonObjectConcurrentServer");

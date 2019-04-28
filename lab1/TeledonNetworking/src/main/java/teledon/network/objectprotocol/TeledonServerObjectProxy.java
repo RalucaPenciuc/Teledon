@@ -3,17 +3,18 @@ package teledon.network.objectprotocol;
 import teledon.model.*;
 import teledon.network.dto.*;
 import teledon.services.ITeledonObserver;
-import teledon.services.ITeledonServer;
+import teledon.services.ITeledonServices;
 import teledon.services.TeledonException;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.rmi.RemoteException;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class TeledonServerObjectProxy implements ITeledonServer {
+public class TeledonServerObjectProxy implements ITeledonServices {
     private String host;
     private int port;
 
@@ -172,6 +173,8 @@ public class TeledonServerObjectProxy implements ITeledonServer {
                 client.updateCazuriList(cazuri);
                 System.out.println("Done that update proxy - exit");
             } catch (TeledonException e) {
+                e.printStackTrace();
+            } catch (RemoteException e) {
                 e.printStackTrace();
             }
         }

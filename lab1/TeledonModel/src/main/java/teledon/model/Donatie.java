@@ -1,6 +1,8 @@
 package teledon.model;
 
-public class Donatie implements HasID<Pair<CazCaritabil, Donator>> {
+import java.io.Serializable;
+
+public class Donatie implements HasID<Pair<CazCaritabil, Donator>>, Serializable {
     private Pair<CazCaritabil, Donator> ID;
     private double sumaDonata;
 

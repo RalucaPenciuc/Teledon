@@ -1,11 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'lab1'
 version '1.0'
 
 sourceCompatibility = 1.8
+
+mainClassName='StartObjectClient'
 
 repositories {
     mavenCentral()
@@ -16,10 +19,11 @@ dependencies {
 
     compile project (':TeledonModel')
     compile project (':TeledonServices')
-    compile project (':TeledonNetworking')
+//    compile project (':TeledonNetworking')
 
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.10.0'
+    compile 'org.springframework:spring-context:5.0.4.RELEASE'
 
     runtime group: 'org.xerial', name: 'sqlite-jdbc', version: '3.16.1'
 }
