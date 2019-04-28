@@ -12,3 +12,5 @@ Detalii proiect:
 - informatiile pentru conectarea la baza de date se preiau dintr-un fisier de configurare
 - interfata grafica (SceneBuilder)
 - arhitectura aplicatie server-client
+- tehnologie RPC (Spring RMI)
+- versiune cross-platform (Protocol Buffers)
