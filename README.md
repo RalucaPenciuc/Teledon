@@ -14,3 +14,4 @@ Detalii proiect:
 - arhitectura aplicatie server-client
 - tehnologie RPC (Spring RMI)
 - versiune cross-platform (Protocol Buffers)
+- Hibernate
