@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="4eeb0775-ffa3-45b6-8c20-146beabf5b01" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/../../../TeledonServer/src/main/resources/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+</module>

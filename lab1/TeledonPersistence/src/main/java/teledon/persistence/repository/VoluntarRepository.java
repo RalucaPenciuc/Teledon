@@ -2,19 +2,25 @@ package teledon.persistence.repository;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import teledon.model.Voluntar;
 import teledon.persistence.IVoluntarRepository;
 
 import java.sql.*;
 import java.util.Properties;
 
-public class VoluntarRepository implements IVoluntarRepository<String, Voluntar> {
+public class VoluntarRepository implements IVoluntarRepository<Integer, Voluntar> {
     private JdbcUtils dbUtils;
+    private HibernateUtils hbUtils;
     private static final Logger logger = LogManager.getLogger();
 
-    public VoluntarRepository(Properties properties) {
-        logger.info("Initializing VoluntarRepository with properties: {} ", properties);
-        dbUtils = new JdbcUtils(properties);
+    public VoluntarRepository(Properties svProperties, Properties hbProperties) {
+        logger.info("Initializing VoluntarRepository with hibernate properties: {} ", hbProperties);
+        logger.info("Initializing VoluntarRepository with server properties: {}", svProperties);
+        dbUtils = new JdbcUtils(svProperties);
+        hbUtils = new HibernateUtils(hbProperties);
     }
 
     @Override
@@ -22,29 +28,32 @@ public class VoluntarRepository implements IVoluntarRepository<String, Voluntar>
         logger.traceEntry("Finding enitity with name {} ", s);
         Connection con = dbUtils.getConnection();
 
-        try (PreparedStatement preStmt = con.prepareStatement("select * from Voluntari where name = ?")) {
-            preStmt.setString(1, s);
-            try (ResultSet result = preStmt.executeQuery()) {
-                if (result.next()) {
-                    int id = result.getInt("ID");
-                    String nume = result.getString("name");
-                    String parola = result.getString("password");
+        try (Session session = hbUtils.getSession()) {
+            Transaction transaction = null;
+            try {
+                transaction = session.beginTransaction();
 
-                    Voluntar voluntar = new Voluntar(String.valueOf(id), nume, parola);
+                String queryString = "FROM Voluntar v WHERE v.name LIKE :nume";
+                Voluntar user = (Voluntar)session.createQuery(queryString, Voluntar.class)
+                        .setParameter("nume", s)
+                        .setMaxResults(1)
+                        .uniqueResult();
 
-                    logger.traceExit(voluntar);
-                    return voluntar;
+                transaction.commit();
+                return user;
+            } catch (RuntimeException ex) {
+                logger.error(ex);
+                if (transaction != null) {
+                    transaction.rollback();
+                }
+            } finally {
+                session.close();
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             }
-        } catch (SQLException ex) {
-            logger.error(ex);
-            System.out.println("Error DB " + ex);
-        }
-        logger.traceExit("No entity found with name {}", s);
-        try {
-            con.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
         return null;
     }
@@ -54,22 +63,25 @@ public class VoluntarRepository implements IVoluntarRepository<String, Voluntar>
         logger.traceEntry("Saving entity {} ", entity);
         Connection con = dbUtils.getConnection();
 
-        try(PreparedStatement preStmt = con.prepareStatement("insert into Voluntari values (?,?,?)")){
-            preStmt.setInt(1, Integer.parseInt(entity.getID()));
-            preStmt.setString(2, entity.getName());
-            preStmt.setString(3, entity.getPassword());
-
-            int result = preStmt.executeUpdate();
-
-        } catch (SQLException ex){
-            logger.error(ex);
-            System.out.println("Error DB "+ex);
-        }
-        logger.traceExit();
-        try {
-            con.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        try (Session session = hbUtils.getSession()) {
+            Transaction transaction = null;
+            try {
+                transaction = session.beginTransaction();
+                session.save(entity);
+                transaction.commit();
+            } catch (RuntimeException ex) {
+                logger.error(ex);
+                if (transaction != null) {
+                    transaction.rollback();
+                }
+            } finally {
+                session.close();
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }

@@ -39,7 +39,7 @@ public class DonatorDTO implements Serializable {
 
     @Override
     public String toString() {
-        return "teledon.model.Donator{" +
+        return "teledon.teledon.model.Donator{" +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +

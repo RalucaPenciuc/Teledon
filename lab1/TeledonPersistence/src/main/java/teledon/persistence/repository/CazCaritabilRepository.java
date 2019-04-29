@@ -2,6 +2,8 @@ package teledon.persistence.repository;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 import teledon.model.CazCaritabil;
 import teledon.persistence.ICazCaritabilRepository;
 
@@ -10,42 +12,49 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class CazCaritabilRepository implements ICazCaritabilRepository<String, CazCaritabil> {
+public class CazCaritabilRepository implements ICazCaritabilRepository<Integer, CazCaritabil> {
     private JdbcUtils dbUtils;
+    private HibernateUtils hbUtils;
     private static final Logger logger = LogManager.getLogger();
 
-    public CazCaritabilRepository(Properties properties) {
-        logger.info("Initializing CazCaritabilRepository with properties: {} ", properties);
-        dbUtils = new JdbcUtils(properties);
+    public CazCaritabilRepository(Properties svProperties, Properties hbProperties) {
+        logger.info("Initializing CazCaritabilRepository with server properties: {} ", svProperties);
+        logger.info("Initializing CazCaritabilRepository with hibernate properties: {} ", hbProperties);
+        dbUtils = new JdbcUtils(svProperties);
+        hbUtils = new HibernateUtils(hbProperties);
     }
 
     @Override
-    public CazCaritabil findOne(String s) {
+    public CazCaritabil findOne(Integer s) {
         logger.traceEntry("Finding enitity with id {} ", s);
         Connection con = dbUtils.getConnection();
 
-        try (PreparedStatement preStmt = con.prepareStatement("select * from CazuriCaritabile where ID = ?")) {
-            preStmt.setInt(1, Integer.parseInt(s));
-            try (ResultSet result = preStmt.executeQuery()) {
-                if (result.next()) {
-                    int id = result.getInt("ID");
-                    double suma = result.getDouble("suma_totala");
+        try (Session session = hbUtils.getSession()) {
+            Transaction transaction = null;
+            try {
+                transaction = session.beginTransaction();
 
-                    CazCaritabil cc = new CazCaritabil(String.valueOf(id), suma);
+                String queryString = "FROM CazCaritabil c WHERE c.ID = :id";
+                CazCaritabil cazCaritabil = session.createQuery(queryString, CazCaritabil.class)
+                        .setParameter("id", s)
+                        .setMaxResults(1)
+                        .uniqueResult();
 
-                    logger.traceExit(cc);
-                    return cc;
+                transaction.commit();
+                return cazCaritabil;
+            } catch(RuntimeException ex) {
+                logger.error(ex);
+                if(transaction != null) {
+                    transaction.rollback();
+                }
+            } finally {
+                session.close();
+                try {
+                    con.close();
+                } catch(SQLException e) {
+                    e.printStackTrace();
                 }
             }
-        } catch (SQLException ex) {
-            logger.error(ex);
-            System.out.println("Error DB " + ex);
-        }
-        logger.traceExit("No entity found with name {}", s);
-        try {
-            con.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
         return null;
     }
@@ -55,29 +64,31 @@ public class CazCaritabilRepository implements ICazCaritabilRepository<String, C
     public Iterable<CazCaritabil> findAll() {
         logger.traceEntry();
         Connection con = dbUtils.getConnection();
-        List<CazCaritabil> cazuri = new ArrayList<>();
 
-        try(PreparedStatement preStmt = con.prepareStatement("select * from CazuriCaritabile")) {
-            try(ResultSet result = preStmt.executeQuery()) {
-                while (result.next()) {
-                    String id = String.valueOf(result.getInt("ID"));
-                    double suma = result.getDouble("suma_totala");
+        try (Session session = hbUtils.getSession()) {
+            Transaction transaction = null;
+            try {
+                transaction = session.beginTransaction();
 
-                    CazCaritabil caz = new CazCaritabil(id, suma);
-                    cazuri.add(caz);
+                String queryString = "FROM CazCaritabil c";
+                List<CazCaritabil> cazuri = session.createQuery(queryString, CazCaritabil.class).list();
+                transaction.commit();
+                return cazuri;
+            } catch (RuntimeException ex) {
+                logger.error(ex);
+                if (transaction != null) {
+                    transaction.rollback();
+                }
+            } finally {
+                session.close();
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             }
-        } catch (SQLException e) {
-            logger.error(e);
-            System.out.println("Error DB " + e);
         }
-        logger.traceExit(cazuri);
-        try {
-            con.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return cazuri;
+        return null;
     }
 
     @Override
@@ -85,21 +96,25 @@ public class CazCaritabilRepository implements ICazCaritabilRepository<String, C
         logger.traceEntry("Saving entity {} ", entity);
         Connection con = dbUtils.getConnection();
 
-        try(PreparedStatement preStmt = con.prepareStatement("insert into CazuriCaritabile values (?,?)")){
-            preStmt.setInt(1, Integer.parseInt(entity.getID()));
-            preStmt.setDouble(2, entity.getTotalSum());
-
-            int result = preStmt.executeUpdate();
-
-        } catch (SQLException ex){
-            logger.error(ex);
-            System.out.println("Error DB "+ex);
-        }
-        logger.traceExit();
-        try {
-            con.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        try (Session session = hbUtils.getSession()) {
+            Transaction transaction = null;
+            try {
+                transaction = session.beginTransaction();
+                session.save(entity);
+                transaction.commit();
+            } catch (RuntimeException ex) {
+                logger.error(ex);
+                if (transaction != null) {
+                    transaction.rollback();
+                }
+            } finally {
+                session.close();
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
@@ -108,20 +123,29 @@ public class CazCaritabilRepository implements ICazCaritabilRepository<String, C
         logger.traceEntry("Updating entity {} ", newEntity);
         Connection con = dbUtils.getConnection();
 
-        try(PreparedStatement preStmt = con.prepareStatement("update CazuriCaritabile set suma_totala = ? where ID = ?")) {
-            preStmt.setDouble(1, newEntity.getTotalSum());
-            preStmt.setInt(2, Integer.parseInt(newEntity.getID()));
-            int result = preStmt.executeUpdate();
+        try (Session session = hbUtils.getSession()) {
+            Transaction transaction = null;
+            try {
+                transaction = session.beginTransaction();
 
-        } catch (SQLException ex) {
-            logger.error(ex);
-            System.out.println("Error DB " + ex);
-        }
-        logger.traceExit();
-        try {
-            con.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
+                CazCaritabil cazCaritabil = session.load(CazCaritabil.class, newEntity.getID());
+                cazCaritabil.setTotalSum(newEntity.getTotalSum());
+                session.update(cazCaritabil);
+
+                transaction.commit();
+            } catch (RuntimeException ex) {
+                logger.error(ex);
+                if (transaction != null) {
+                    transaction.rollback();
+                }
+            } finally {
+                session.close();
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }

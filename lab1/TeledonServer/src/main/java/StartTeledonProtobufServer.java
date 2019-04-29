@@ -16,18 +16,28 @@ public class StartTeledonProtobufServer {
 
     public static void main(String[] args) {
         Properties serverProperties = new Properties();
+        Properties hibernateProperties = new Properties();
 
         try {
             serverProperties.load(StartTeledonProtobufServer.class.getResourceAsStream("/teledonserver.properties"));
             System.out.println("Server properties set.");
             serverProperties.list(System.out);
         } catch (IOException e) {
-            System.err.println("Cannot find chatserver.properties " + e);
+            System.err.println("Cannot find teledonserver.properties " + e);
             return;
         }
 
-        VoluntarRepository voluntarRepo = new VoluntarRepository(serverProperties);
-        CazCaritabilRepository cazRepo = new CazCaritabilRepository(serverProperties);
+        try {
+            hibernateProperties.load(StartTeledonProtobufServer.class.getResourceAsStream("/hibernate.cfg.xml"));
+            System.out.println("Hibernate properties set.");
+            hibernateProperties.list(System.out);
+        } catch (IOException e) {
+            System.err.println("Cannot find hibernate.cfg.xml");
+            return;
+        }
+
+        VoluntarRepository voluntarRepo = new VoluntarRepository(serverProperties, hibernateProperties);
+        CazCaritabilRepository cazRepo = new CazCaritabilRepository(serverProperties, hibernateProperties);
         DonatorRepository donatorRepo = new DonatorRepository(serverProperties);
         DonatieRepository donatieRepo = new DonatieRepository(serverProperties);
         ITeledonServer teledonServerImpl = new TeledonServerImpl(voluntarRepo, cazRepo, donatorRepo, donatieRepo);
@@ -35,7 +45,7 @@ public class StartTeledonProtobufServer {
         int teledonServerPort = defaultPort;
         try {
             teledonServerPort = Integer.parseInt(serverProperties.getProperty("teledon.server.port"));
-        } catch (NumberFormatException nef){
+        } catch (NumberFormatException nef) {
             System.err.println("Wrong  Port Number" + nef.getMessage());
             System.err.println("Using default port " + defaultPort);
         }

@@ -74,7 +74,7 @@ public class cazCaritabilWindowController implements ITeledonObserver {
     }
 
     @FXML private void addHandler() {
-        String id = idCazCaritabil.getText();
+        int id = Integer.parseInt(idCazCaritabil.getText());
         String nume = numeDonator.getText();
         String adresa = adresaDonator.getText();
         String telefon = telefonDonator.getText();
@@ -125,7 +125,7 @@ public class cazCaritabilWindowController implements ITeledonObserver {
     }
 
     @FXML private void clickedCazTable() {
-        String idCaz = tableViewCaz.getSelectionModel().getSelectedItem().getID();
+        String idCaz = tableViewCaz.getSelectionModel().getSelectedItem().getID().toString();
         idCazCaritabil.setText(idCaz);
     }
 

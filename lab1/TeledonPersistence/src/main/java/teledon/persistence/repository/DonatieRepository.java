@@ -28,7 +28,7 @@ public class DonatieRepository implements IDonatieRepository<Pair<CazCaritabil, 
         Connection con = dbUtils.getConnection();
 
         try (PreparedStatement preStmt = con.prepareStatement("insert into Donatii values (?,?,?)")) {
-            preStmt.setInt(1, Integer.parseInt(entity.getID().getObject1().getID()));
+            preStmt.setInt(1, entity.getID().getObject1().getID());
             preStmt.setInt(2, Integer.parseInt(entity.getID().getObject2().getID()));
             preStmt.setDouble(3, entity.getSumaDonata());
 

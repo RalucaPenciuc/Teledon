@@ -2,7 +2,7 @@ package teledon.persistence;
 
 
 public interface ICazCaritabilRepository<ID,E> {
-    E findOne(String s);
+    E findOne(ID s);
     Iterable<E> findAll();
     void save(E entity);
     void update(E entity);

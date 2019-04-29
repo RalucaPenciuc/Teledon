@@ -29,9 +29,9 @@ public class Donatie implements HasID<Pair<CazCaritabil, Donator>> {
 
     @Override
     public String toString() {
-        return "teledon.model.Donatie{" +
+        return "teledon.teledon.model.Donatie{" +
                 "IDCazCaritabil=" + ID.getObject1() +
-                ", teledon.model.Donator=" + ID.getObject2() +
+                ", teledon.teledon.model.Donator=" + ID.getObject2() +
                 ", sumaDonata=" + sumaDonata +
                 '}';
     }

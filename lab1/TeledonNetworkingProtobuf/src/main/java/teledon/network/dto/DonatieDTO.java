@@ -3,13 +3,13 @@ package teledon.network.dto;
 import java.io.Serializable;
 
 public class DonatieDTO implements Serializable {
-    private String idCazCaritabil;
+    private int idCazCaritabil;
     private String numeDonator;
     private String adresaDonator;
     private String telefonDonator;
     private double sumaDonata;
 
-    public DonatieDTO(String idCazCaritabil, String numeDonator, String adresaDonator, String telefonDonator, double sumaDonata) {
+    public DonatieDTO(int idCazCaritabil, String numeDonator, String adresaDonator, String telefonDonator, double sumaDonata) {
         this.idCazCaritabil = idCazCaritabil;
         this.numeDonator = numeDonator;
         this.adresaDonator = adresaDonator;
@@ -17,11 +17,11 @@ public class DonatieDTO implements Serializable {
         this.sumaDonata = sumaDonata;
     }
 
-    public String getIdCazCaritabil() {
+    public int getIdCazCaritabil() {
         return idCazCaritabil;
     }
 
-    public void setIdCazCaritabil(String idCazCaritabil) {
+    public void setIdCazCaritabil(int idCazCaritabil) {
         this.idCazCaritabil = idCazCaritabil;
     }
 

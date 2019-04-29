@@ -43,7 +43,7 @@ public class ProtobufUtils {
 
     public static TeledonProtobufs.TeledonRequest createAddDonatieRequest(DTODonatie donatie) {
         TeledonProtobufs.Donatie donatieDTO = TeledonProtobufs.Donatie.newBuilder()
-                .setIdCazCaritabil(donatie.getIdCazCaritabil())
+                .setIdCazCaritabil(String.valueOf(donatie.getIdCazCaritabil()))
                 .setNumeDonator(donatie.getNumeDonator())
                 .setAdresaDonator(donatie.getAdresaDonator())
                 .setTelefonDonator(donatie.getTelefonDonator())
@@ -71,7 +71,7 @@ public class ProtobufUtils {
                 .setType(TeledonProtobufs.TeledonResponse.Type.GetCazuriCaritabile);
         for(CazCaritabil cazCaritabil: cazuriCaritabile) {
             TeledonProtobufs.CazCaritabil cazCaritabil1DTO = TeledonProtobufs.CazCaritabil.newBuilder()
-                    .setId(cazCaritabil.getID())
+                    .setId(cazCaritabil.getID().toString())
                     .setTotalSum(String.valueOf(cazCaritabil.getTotalSum())).build();
             response.addCazuriCaritabile(cazCaritabil1DTO);
         }
@@ -96,7 +96,7 @@ public class ProtobufUtils {
                 .setType(TeledonProtobufs.TeledonResponse.Type.AddedDonatie);
         for(CazCaritabil cazCaritabil: cazuriCaritabile) {
             TeledonProtobufs.CazCaritabil cazCaritabil1DTO = TeledonProtobufs.CazCaritabil.newBuilder()
-                    .setId(cazCaritabil.getID())
+                    .setId(cazCaritabil.getID().toString())
                     .setTotalSum(String.valueOf(cazCaritabil.getTotalSum())).build();
             response.addCazuriCaritabile(cazCaritabil1DTO);
         }
@@ -113,7 +113,7 @@ public class ProtobufUtils {
         ArrayList<CazCaritabil> cazuriCaritabile = new ArrayList<>();
         for(int i = 0; i < response.getCazuriCaritabileCount(); i++) {
             TeledonProtobufs.CazCaritabil cazCaritabilDTO = response.getCazuriCaritabile(i);
-            cazuriCaritabile.add(new CazCaritabil(cazCaritabilDTO.getId(), Double.parseDouble(cazCaritabilDTO.getTotalSum())));
+            cazuriCaritabile.add(new CazCaritabil(Integer.valueOf(cazCaritabilDTO.getId()), Double.parseDouble(cazCaritabilDTO.getTotalSum())));
         }
         return cazuriCaritabile;
     }
@@ -138,7 +138,7 @@ public class ProtobufUtils {
     }
 
     public static DTODonatie getDonatie(TeledonProtobufs.TeledonRequest request) {
-        return new DTODonatie(request.getDonatie().getIdCazCaritabil(),
+        return new DTODonatie(Integer.parseInt(request.getDonatie().getIdCazCaritabil()),
                 request.getDonatie().getNumeDonator(),
                 request.getDonatie().getAdresaDonator(),
                 request.getDonatie().getTelefonDonator(),

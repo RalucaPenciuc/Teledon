@@ -63,7 +63,7 @@ public class Donator implements HasID<String> {
 
     @Override
     public String toString() {
-        return "teledon.model.Donator{" +
+        return "teledon.teledon.model.Donator{" +
                 "ID='" + ID + '\'' +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +

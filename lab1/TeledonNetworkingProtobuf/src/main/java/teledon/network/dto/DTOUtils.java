@@ -21,7 +21,7 @@ public class DTOUtils {
     }
 
     public static DTODonatie getFromDTO(DonatieDTO dondto) {
-        String idCaz = dondto.getIdCazCaritabil();
+        int idCaz = dondto.getIdCazCaritabil();
         String nume = dondto.getNumeDonator();
         String adresa = dondto.getAdresaDonator();
         String telefon = dondto.getTelefonDonator();
@@ -30,7 +30,7 @@ public class DTOUtils {
     }
 
     public static DonatieDTO getDTO(DTODonatie donatie) {
-        String idCaz = donatie.getIdCazCaritabil();
+        int idCaz = donatie.getIdCazCaritabil();
         String nume = donatie.getNumeDonator();
         String adresa = donatie.getAdresaDonator();
         String telefon = donatie.getTelefonDonator();
@@ -70,7 +70,7 @@ public class DTOUtils {
     public static Iterable<CazCaritabil> getCazFromDTO(Iterable<CazCaritabilDTO> cazuridto) {
         ArrayList<CazCaritabil> cazuri = new ArrayList<>();
         for (CazCaritabilDTO ccdto : cazuridto) {
-            String id = ccdto.getID();
+            int id = ccdto.getID();
             double suma = ccdto.getTotalSum();
             cazuri.add(new CazCaritabil(id, suma));
         }
@@ -80,7 +80,7 @@ public class DTOUtils {
     public static Iterable<CazCaritabilDTO> getCazDTOs(Iterable<CazCaritabil> cazuri) {
         ArrayList<CazCaritabilDTO> cazuriDTO = new ArrayList<>();
         for (CazCaritabil cc : cazuri) {
-            String id = cc.getID();
+            int id = cc.getID();
             double suma = cc.getTotalSum();
             cazuriDTO.add(new CazCaritabilDTO(id, suma));
         }
@@ -90,7 +90,7 @@ public class DTOUtils {
     public static Iterable<CazCaritabilDTO> getDTO(Iterable<CazCaritabil> cazuri) {
         ArrayList<CazCaritabilDTO> cazuridto = new ArrayList<>();
         for (CazCaritabil cc : cazuri) {
-            String id = cc.getID();
+            int id = cc.getID();
             double suma = cc.getTotalSum();
             cazuridto.add(new CazCaritabilDTO(id, suma));
         }

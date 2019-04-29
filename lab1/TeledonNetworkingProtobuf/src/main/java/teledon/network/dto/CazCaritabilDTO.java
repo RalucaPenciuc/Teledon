@@ -3,19 +3,19 @@ package teledon.network.dto;
 import java.io.Serializable;
 
 public class CazCaritabilDTO implements Serializable {
-    private String ID;
+    private int ID;
     private double totalSum;
 
-    public CazCaritabilDTO(String ID, double totalSum) {
+    public CazCaritabilDTO(int ID, double totalSum) {
         this.ID = ID;
         this.totalSum = totalSum;
     }
 
-    public String getID() {
+    public int getID() {
         return ID;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 

@@ -1,28 +1,41 @@
 package teledon.model;
 
-public class CazCaritabil implements HasID<String> {
-    private String ID;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Entity
+@Table(name = "CazuriCaritabile")
+public class CazCaritabil implements HasID<Integer>, Serializable {
+    private int ID;
     private double totalSum;
 
-    public CazCaritabil(String ID, double totalSum) {
+    public CazCaritabil() {}
+
+    public CazCaritabil(int ID) {
+        this.ID = ID;
+    }
+
+    public CazCaritabil(int ID, double totalSum) {
         this.ID = ID;
         this.totalSum = totalSum;
     }
 
-    public CazCaritabil(String ID) {
-        this.ID = ID;
-    }
-
+    @Id
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
     @Override
-    public String getID() {
+    public Integer getID() {
         return ID;
     }
 
     @Override
-    public void setID(String ID) {
+    public void setID(Integer ID) {
         this.ID = ID;
     }
 
+    @Column(name = "suma_totala")
     public double getTotalSum() {
         return totalSum;
     }
@@ -33,7 +46,7 @@ public class CazCaritabil implements HasID<String> {
 
     @Override
     public String toString() {
-        return "teledon.model.CazCaritabil{" +
+        return "teledon.teledon.model.CazCaritabil{" +
                 "ID='" + ID + '\'' +
                 ", totalSum=" + totalSum +
                 '}';

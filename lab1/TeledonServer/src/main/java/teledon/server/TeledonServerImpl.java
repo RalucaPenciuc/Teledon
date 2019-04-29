@@ -22,7 +22,7 @@ public class TeledonServerImpl implements ITeledonServer {
     private CazCaritabilRepository cazRepository;
     private DonatorRepository donatorRepository;
     private DonatieRepository donatieRepository;
-    private Map<String, ITeledonObserver> loggedClients;
+    private Map<Integer, ITeledonObserver> loggedClients;
 
     public TeledonServerImpl(VoluntarRepository vRepo, CazCaritabilRepository cRepo, DonatorRepository dRepo, DonatieRepository ddRepo) {
         voluntarRepository = vRepo;
@@ -58,7 +58,7 @@ public class TeledonServerImpl implements ITeledonServer {
     }
 
     public synchronized void adaugaDonatie(DTODonatie donatieDTO) throws TeledonException {
-        String idCazCaritabil = donatieDTO.getIdCazCaritabil();
+        int idCazCaritabil = donatieDTO.getIdCazCaritabil();
         String numeDonator = donatieDTO.getNumeDonator();
         String adresaDonator = donatieDTO.getAdresaDonator();
         String telefonDonator = donatieDTO.getTelefonDonator();

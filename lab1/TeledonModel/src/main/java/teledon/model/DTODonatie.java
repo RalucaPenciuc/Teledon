@@ -1,13 +1,13 @@
 package teledon.model;
 
 public class DTODonatie {
-    private String idCazCaritabil;
+    private int idCazCaritabil;
     private String numeDonator;
     private String adresaDonator;
     private String telefonDonator;
     private double sumaDonata;
 
-    public DTODonatie(String idCazCaritabil, String numeDonator, String adresaDonator, String telefonDonator, double sumaDonata) {
+    public DTODonatie(int idCazCaritabil, String numeDonator, String adresaDonator, String telefonDonator, double sumaDonata) {
         this.idCazCaritabil = idCazCaritabil;
         this.numeDonator = numeDonator;
         this.adresaDonator = adresaDonator;
@@ -15,11 +15,11 @@ public class DTODonatie {
         this.sumaDonata = sumaDonata;
     }
 
-    public String getIdCazCaritabil() {
+    public int getIdCazCaritabil() {
         return idCazCaritabil;
     }
 
-    public void setIdCazCaritabil(String idCazCaritabil) {
+    public void setIdCazCaritabil(int idCazCaritabil) {
         this.idCazCaritabil = idCazCaritabil;
     }
 
